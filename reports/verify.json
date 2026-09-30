@@ -7,9 +7,9 @@
     "failed": 0,
     "attacks": 123,
     "defenderMs": {
-      "max": 18.617417000000017,
-      "avg": 1.0201616097561617,
-      "p95": 3.4797080000007554
+      "max": 23.76491699999997,
+      "avg": 1.202488845528462,
+      "p95": 3.910083000000668
     },
     "hiddenPuzzles": 15,
     "hiddenClasses": 125,
@@ -72,7 +72,7 @@
       "universalWalkthroughNodes": 3,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 11.437374999999989
+      "ms": 15.033625
     },
     {
       "id": "gen-0002",
@@ -86,7 +86,7 @@
       "universalWalkthroughNodes": 2,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 5.854249999999993
+      "ms": 7.506833
     },
     {
       "id": "gen-0003",
@@ -100,7 +100,7 @@
       "universalWalkthroughNodes": 2,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 2.3429160000000024
+      "ms": 3.1538340000000034
     },
     {
       "id": "gen-0004",
@@ -114,7 +114,7 @@
       "universalWalkthroughNodes": 17,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 134.983584
+      "ms": 159.88825
     },
     {
       "id": "gen-0005",
@@ -128,7 +128,7 @@
       "universalWalkthroughNodes": 59,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 2552.6144170000002
+      "ms": 2938.169375
     },
     {
       "id": "gen-0006",
@@ -142,7 +142,7 @@
       "universalWalkthroughNodes": 4,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 5.869333000000097
+      "ms": 6.376500000000306
     },
     {
       "id": "gen-0007",
@@ -156,7 +156,7 @@
       "universalWalkthroughNodes": 3,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 4.454625000000306
+      "ms": 5.344167000000198
     },
     {
       "id": "gen-0008",
@@ -170,7 +170,7 @@
       "universalWalkthroughNodes": 2,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 6.838792000000012
+      "ms": 7.937334000000192
     },
     {
       "id": "gen-0009",
@@ -184,7 +184,7 @@
       "universalWalkthroughNodes": 2,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 1.8959170000002814
+      "ms": 2.4326249999999163
     },
     {
       "id": "gen-0010",
@@ -198,7 +198,7 @@
       "universalWalkthroughNodes": 8,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 134.56937500000004
+      "ms": 162.2612079999999
     },
     {
       "id": "gen-0011",
@@ -212,7 +212,7 @@
       "universalWalkthroughNodes": 2,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 36.054541999999856
+      "ms": 41.64545799999996
     },
     {
       "id": "gen-0012",
@@ -226,7 +226,7 @@
       "universalWalkthroughNodes": 17,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 124.98404100000016
+      "ms": 141.0205420000002
     },
     {
       "id": "gen-0013",
@@ -240,7 +240,7 @@
       "universalWalkthroughNodes": 59,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 2586.136667
+      "ms": 2942.624292
     },
     {
       "id": "gen-0014",
@@ -254,7 +254,7 @@
       "universalWalkthroughNodes": 7,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 38.02129199999945
+      "ms": 40.26758299999983
     },
     {
       "id": "gen-0015",
@@ -268,7 +268,7 @@
       "universalWalkthroughNodes": 3,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 4.325417000000016
+      "ms": 4.478167000000212
     },
     {
       "id": "gen-0016",
@@ -282,7 +282,7 @@
       "universalWalkthroughNodes": 17,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 127.4766669999999
+      "ms": 146.66554199999973
     },
     {
       "id": "gen-0017",
@@ -296,7 +296,7 @@
       "universalWalkthroughNodes": 56,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 1149.127375
+      "ms": 1300.2940420000004
     },
     {
       "id": "gen-0018",
@@ -310,7 +310,7 @@
       "universalWalkthroughNodes": 4,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 6.159125000000131
+      "ms": 6.987500000000182
     },
     {
       "id": "gen-0019",
@@ -324,7 +324,7 @@
       "universalWalkthroughNodes": 3,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 4.032333000000108
+      "ms": 4.452624999999898
     },
     {
       "id": "gen-0020",
@@ -338,7 +338,7 @@
       "universalWalkthroughNodes": 17,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 164.25870899999973
+      "ms": 186.9985000000006
     },
     {
       "id": "gen-0021",
@@ -352,7 +352,7 @@
       "universalWalkthroughNodes": 56,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 1154.5485829999989
+      "ms": 1303.6004169999997
     },
     {
       "id": "gen-0022",
@@ -366,7 +366,7 @@
       "universalWalkthroughNodes": 11,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 521.7060409999995
+      "ms": 583.6278750000001
     },
     {
       "id": "gen-0023",
@@ -380,7 +380,7 @@
       "universalWalkthroughNodes": 17,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 132.63716700000077
+      "ms": 155.5543749999997
     },
     {
       "id": "gen-0024",
@@ -394,7 +394,7 @@
       "universalWalkthroughNodes": 58,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 1940.0967500000006
+      "ms": 2198.6635829999996
     },
     {
       "id": "gen-0025",
@@ -408,7 +408,7 @@
       "universalWalkthroughNodes": 7,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 51.09858399999939
+      "ms": 58.90116699999999
     },
     {
       "id": "gen-0026",
@@ -422,7 +422,7 @@
       "universalWalkthroughNodes": 17,
       "hiddenClasses": 4,
       "hiddenSamples": 16,
-      "ms": 170.09329100000105
+      "ms": 197.33379100000093
     },
     {
       "id": "gen-0027",
@@ -436,7 +436,7 @@
       "universalWalkthroughNodes": 56,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 1150.8918329999997
+      "ms": 1305.4010420000013
     },
     {
       "id": "gen-0028",
@@ -450,7 +450,7 @@
       "universalWalkthroughNodes": 5,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 405.0419579999998
+      "ms": 457.1915000000008
     },
     {
       "id": "gen-0029",
@@ -464,7 +464,7 @@
       "universalWalkthroughNodes": 17,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 135.52700000000004
+      "ms": 155.5603340000016
     },
     {
       "id": "gen-0030",
@@ -478,7 +478,7 @@
       "universalWalkthroughNodes": 58,
       "hiddenClasses": 4,
       "hiddenSamples": 16,
-      "ms": 1942.328458
+      "ms": 2224.578374999999
     },
     {
       "id": "gen-0031",
@@ -492,7 +492,7 @@
       "universalWalkthroughNodes": 4,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 7.521667000000889
+      "ms": 7.271749999999884
     },
     {
       "id": "gen-0032",
@@ -506,7 +506,7 @@
       "universalWalkthroughNodes": 17,
       "hiddenClasses": 9,
       "hiddenSamples": 16,
-      "ms": 135.77008300000125
+      "ms": 153.67354199999681
     },
     {
       "id": "gen-0033",
@@ -520,7 +520,7 @@
       "universalWalkthroughNodes": 56,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 1100.574208
+      "ms": 1265.7562079999989
     },
     {
       "id": "gen-0034",
@@ -534,7 +534,7 @@
       "universalWalkthroughNodes": 15,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 103.19229199999972
+      "ms": 109.55500000000029
     },
     {
       "id": "gen-0035",
@@ -548,7 +548,7 @@
       "universalWalkthroughNodes": 58,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 1799.1151250000003
+      "ms": 2038.4671249999992
     },
     {
       "id": "gen-0036",
@@ -562,7 +562,7 @@
       "universalWalkthroughNodes": 4,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 20.568916000000172
+      "ms": 25.013374999998632
     },
     {
       "id": "gen-0037",
@@ -576,7 +576,7 @@
       "universalWalkthroughNodes": 7,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 28.681791999999405
+      "ms": 30.09404099999665
     },
     {
       "id": "gen-0038",
@@ -590,7 +590,7 @@
       "universalWalkthroughNodes": 8,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 126.5189590000009
+      "ms": 141.78683400000227
     },
     {
       "id": "gen-0039",
@@ -604,7 +604,7 @@
       "universalWalkthroughNodes": 15,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 120.74533399999927
+      "ms": 135.08150000000023
     },
     {
       "id": "gen-0040",
@@ -618,7 +618,7 @@
       "universalWalkthroughNodes": 16,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 172.1818749999984
+      "ms": 193.96229200000016
     },
     {
       "id": "gen-0041",
@@ -632,7 +632,7 @@
       "universalWalkthroughNodes": 8,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 124.69670899999983
+      "ms": 145.3234169999996
     },
     {
       "id": "gen-0042",
@@ -646,7 +646,7 @@
       "universalWalkthroughNodes": 8,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 176.44508400000268
+      "ms": 212.2749589999985
     },
     {
       "id": "gen-0043",
@@ -660,7 +660,7 @@
       "universalWalkthroughNodes": 8,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 182.64341599999898
+      "ms": 208.99716699999772
     },
     {
       "id": "gen-0044",
@@ -674,7 +674,7 @@
       "universalWalkthroughNodes": 8,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 175.3345420000005
+      "ms": 201.6157920000005
     },
     {
       "id": "gen-0045",
@@ -688,7 +688,7 @@
       "universalWalkthroughNodes": 16,
       "hiddenClasses": 0,
       "hiddenSamples": 0,
-      "ms": 65.24029199999859
+      "ms": 77.24774999999863
     }
   ]
 }

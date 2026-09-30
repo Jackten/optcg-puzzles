@@ -3,6 +3,7 @@ import {effects} from '../src/engine/effects';
 import {engine,cards} from '../src/engine/index';
 import {instance,position,greedy,solve,proveLine,hiddenRepresentative,version} from './puzzle-tools';
 import type {Action,GameState,Puzzle,PuzzleSet} from '../src/engine/api';
+import {teachSet} from './teach';
 let seed=20261001;const rand=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/2**32;};
 const pick=<T>(xs:T[]):T=>xs[Math.floor(rand()*xs.length)];
 const leaders=cards.filter(c=>c.category==='Leader');
@@ -64,4 +65,4 @@ const packs=categories.map((title,i)=>({id:`pack-${i+1}`,title,puzzleIds:puzzles
 const remaining=[...puzzles].sort((a,b)=>a.difficulty-b.difficulty),dailyOrder:string[]=[];
 while(remaining.length){for(let i=0;i<7&&remaining.length;i++){const ix=i<3?0:Math.min(remaining.length-1,Math.floor(remaining.length*(i-2)/5));dailyOrder.push(remaining.splice(ix,1)[0].id);}}
 const set:PuzzleSet={generatedAt:'2026-10-01T00:00:00-04:00',puzzles,packs,dailyOrder};
-fs.writeFileSync('public/puzzles.json',JSON.stringify(set,null,2)+'\n');fs.writeFileSync('reports/generation.json',JSON.stringify({seed:20261001,attempts,rejections:stats,hidden:puzzles.filter(p=>!p.state.opp.handVisible).length,histogram:Object.fromEntries([1,2,3,4,5].map(d=>[d,puzzles.filter(p=>p.difficulty===d).length]))},null,2));
+fs.writeFileSync('public/puzzles.json',JSON.stringify(teachSet(set),null,2)+'\n');fs.writeFileSync('reports/generation.json',JSON.stringify({seed:20261001,attempts,rejections:stats,hidden:puzzles.filter(p=>!p.state.opp.handVisible).length,histogram:Object.fromEntries([1,2,3,4,5].map(d=>[d,puzzles.filter(p=>p.difficulty===d).length]))},null,2));

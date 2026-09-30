@@ -3,13 +3,14 @@
   "puzzles": [
     {
       "id": "gen-0001",
-      "title": "Usopp: DON!! distribution",
+      "title": "Usopp: Leader abilities",
       "difficulty": 1,
       "concepts": [
-        "DON!! distribution",
-        "Blockers"
+        "Leader abilities",
+        "bait the Blocker",
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Tsuru can block. Their hand is empty. You have 1 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -161,7 +162,7 @@
               "m-0#1"
             ]
           },
-          "why": "Give 1 rested DON!! to Nefeltari Vivi: +1000 power during your turn, without spending active DON!!. Use this once-per-turn ability before that card attacks."
+          "why": "Use Monkey.D.Luffy's Leader ability: Nefeltari Vivi gets 1 rested DON!! (+1,000) without touching your active DON!!. Free power comes first."
         },
         {
           "action": {
@@ -169,7 +170,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Nefeltari Vivi: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Nefeltari Vivi swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. Tsuru blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -177,15 +178,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Usopp: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Usopp swings at their Leader Monkey.D.Luffy, 6,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about DON!! distribution and Blockers before committing DON!!.",
-        "Activate Monkey.D.Luffy → Nefeltari Vivi (1 rested DON!!)",
-        "Activate Monkey.D.Luffy → Nefeltari Vivi (1 rested DON!!) → Attack Monkey.D.Luffy with Nefeltari Vivi (5000 power) → Attack Monkey.D.Luffy with Usopp (6000 power)"
+        "Long-press your Leader, Monkey.D.Luffy, and read its ability. What does it buy you before your first attack?",
+        "First move: Monkey.D.Luffy's ability onto Nefeltari Vivi.",
+        "1. Monkey.D.Luffy's ability onto Nefeltari Vivi  2. Nefeltari Vivi attacks their Leader  3. Usopp attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 145,
@@ -201,7 +202,7 @@
         "Rush & removal",
         "Blockers"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Ann can block. Their hand is empty. You have 5 active DON!! and Gum-Gum Jet Pistol in hand. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -354,7 +355,7 @@
               "o-0"
             ]
           },
-          "why": "Gum-Gum Jet Pistol costs 4 active DON!!. Resolve the selected printed effect before choosing the next attack."
+          "why": "Play Gum-Gum Jet Pistol for 4 DON!!. It K.O.s Ann."
         },
         {
           "action": {
@@ -362,15 +363,15 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Ain: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Ain swings at their Leader Shanks, 6,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Rush & removal and Blockers before committing DON!!.",
-        "Play Gum-Gum Jet Pistol → Ann",
-        "Play Gum-Gum Jet Pistol → Ann → Attack Shanks with Ain (6000 power)"
+        "Your hand changes the board. Count your attackers and their Blockers before and after you play it.",
+        "First move: Play Gum-Gum Jet Pistol.",
+        "1. Play Gum-Gum Jet Pistol  2. Ain attacks their Leader"
       ],
-      "lesson": "Spend DON!! on removal before attaching power. A cleared Blocker frees your remaining attack to reach the Leader.",
+      "lesson": "Before you attach DON!!, check whether a card in hand adds an attacker or clears a Blocker. That usually does more than +1,000.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 247,
@@ -384,9 +385,9 @@
       "difficulty": 1,
       "concepts": [
         "Triggers & Banish",
-        "attack order"
+        "counter math"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 1 Life, 0 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Nothing on their side can block. Their hand is empty. You have 0 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -536,7 +537,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Roronoa Zoro swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. It hits, and Banish sends the Life card to the trash, so they get nothing back. They are at 0 Life now; the next clean hit wins."
         },
         {
           "action": {
@@ -544,15 +545,15 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Charlotte Daifuku: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Charlotte Daifuku swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Triggers & Banish and attack order before committing DON!!.",
-        "Attack Monkey.D.Luffy with Roronoa Zoro (7000 power)",
-        "Attack Monkey.D.Luffy with Roronoa Zoro (7000 power) → Attack Monkey.D.Luffy with Charlotte Daifuku (7000 power)"
+        "Look at their Life before you swing. What happens if the wrong attack flips it?",
+        "First move: Roronoa Zoro attacks their Leader.",
+        "1. Roronoa Zoro attacks their Leader  2. Charlotte Daifuku attacks their Leader"
       ],
-      "lesson": "Banish trashes Life without feeding the defender another counter. Attack order can turn the same board from a failed finish into lethal.",
+      "lesson": "A Life card can fight back through its Trigger. Banish trashes it instead, so choose which attacker takes the Life card.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 15,
@@ -562,14 +563,14 @@
     },
     {
       "id": "gen-0004",
-      "title": "Kalifa: counter math",
+      "title": "Kalifa: bait the Blocker",
       "difficulty": 4,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Twenty Doctors can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -735,21 +736,21 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 6,000. Keep loading it: it's going after their Leader Roronoa Zoro (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 7,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Kalifa goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Kalifa goes to 7,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -757,7 +758,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "T-Bone: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "T-Bone swings at their Leader Roronoa Zoro, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -765,7 +766,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Roronoa Zoro, 7,000 into 5,000. Twenty Doctors blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -773,15 +774,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Kalifa: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Kalifa swings at their Leader Roronoa Zoro, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Monkey.D.Luffy",
-        "Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Kalifa → Attack Roronoa Zoro with T-Bone (5000 power) → Attack Roronoa Zoro with Monkey.D.Luffy (7000 power) → Attack Roronoa Zoro with Kalifa (7000 power)"
+        "Twenty Doctors can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Monkey.D.Luffy.",
+        "1. 2 DON!! to Monkey.D.Luffy  2. 1 DON!! to Kalifa  3. T-Bone attacks their Leader  4. Monkey.D.Luffy attacks their Leader  5. Kalifa attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1001,
@@ -791,14 +792,14 @@
     },
     {
       "id": "gen-0005",
-      "title": "Ryuma: counter math",
+      "title": "Ryuma: bait the Blocker",
       "difficulty": 5,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 2 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Jaguar.D.Saul (slot 1) and Jaguar.D.Saul (slot 2) can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -980,21 +981,21 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Ryuma goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ryuma (slot 1) goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Ryuma goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ryuma (slot 2) goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-2"
           },
-          "why": "Miss Sarahebi goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Miss Sarahebi goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -1002,7 +1003,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Crocodile, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -1010,7 +1011,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Ryuma: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Ryuma (slot 1) swings at their Leader Crocodile, 7,000 into 5,000. Jaguar.D.Saul (slot 1) blocks. That's 1 Blocker used up, 1 more to go. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -1018,7 +1019,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Ryuma: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +0 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Ryuma (slot 2) swings at their Leader Crocodile, 7,000 into 5,000. Jaguar.D.Saul (slot 2) blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -1026,15 +1027,15 @@
             "attacker": "m-2",
             "target": "o-L"
           },
-          "why": "Miss Sarahebi: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +0 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Miss Sarahebi swings at their Leader Crocodile, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Ryuma",
-        "Attach 1 DON!! to Ryuma → Attach 1 DON!! to Ryuma → Attach 1 DON!! to Miss Sarahebi → Attack Crocodile with Monkey.D.Luffy (5000 power) → Attack Crocodile with Ryuma (7000 power) → Attack Crocodile with Ryuma (7000 power) → Attack Crocodile with Miss Sarahebi (7000 power)"
+        "Their Blockers each stop one attack. Feed them attacks you don't need.",
+        "First move: 1 DON!! to Ryuma (slot 1).",
+        "1. 1 DON!! to Ryuma (slot 1)  2. 1 DON!! to Ryuma (slot 2)  3. 1 DON!! to Miss Sarahebi  4. Monkey.D.Luffy attacks their Leader  5. Ryuma (slot 1) attacks their Leader  6. Ryuma (slot 2) attacks their Leader  7. Miss Sarahebi attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 19005,
@@ -1044,13 +1045,12 @@
     },
     {
       "id": "gen-0006",
-      "title": "Jango: DON!! distribution",
+      "title": "Jango: bait the Blocker",
       "difficulty": 2,
       "concepts": [
-        "DON!! distribution",
-        "Blockers"
+        "bait the Blocker"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Twenty Doctors can block. Their hand is empty. You have 2 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -1199,14 +1199,14 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Jango goes from 3000 to 4000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Jango goes to 4,000. Keep loading it: it's going after their Leader Roronoa Zoro (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Jango goes from 4000 to 5000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Jango goes to 5,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. Their hand is empty, so nothing can counter it."
         },
         {
           "action": {
@@ -1214,7 +1214,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Jango: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Jango swings at their Leader Roronoa Zoro, 5,000 into 5,000. Twenty Doctors blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -1222,15 +1222,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Miss Sarahebi: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Miss Sarahebi swings at their Leader Roronoa Zoro, 6,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about DON!! distribution and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Jango",
-        "Attach 1 DON!! to Jango → Attach 1 DON!! to Jango → Attack Roronoa Zoro with Jango (5000 power) → Attack Roronoa Zoro with Miss Sarahebi (6000 power)"
+        "Twenty Doctors can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Jango.",
+        "1. 2 DON!! to Jango  2. Jango attacks their Leader  3. Miss Sarahebi attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 116,
@@ -1244,9 +1244,9 @@
       "difficulty": 1,
       "concepts": [
         "Rush & removal",
-        "Blockers"
+        "bait the Blocker"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Trafalgar Law can block. Their hand is empty. You have 5 active DON!! and Roronoa Zoro in hand. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -1397,7 +1397,7 @@
             "uid": "play-rush",
             "targets": []
           },
-          "why": "Roronoa Zoro costs 3 active DON!!. Rush supplies an attacker immediately."
+          "why": "Play Roronoa Zoro for 3 DON!!. Rush means it can attack this turn, which gives you one more attacker than they planned for."
         },
         {
           "action": {
@@ -1405,7 +1405,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Roronoa Zoro (slot 1) swings at their Leader Yamato, 5,000 into 5,000. Trafalgar Law blocks. That was their last Blocker, so the next attack can't be redirected. Trafalgar Law survives, but it's rested now and can't block again."
         },
         {
           "action": {
@@ -1413,15 +1413,15 @@
             "attacker": "play-rush",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Roronoa Zoro (slot 2) swings at their Leader Yamato, 5,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Rush & removal and Blockers before committing DON!!.",
-        "Play Roronoa Zoro",
-        "Play Roronoa Zoro → Attack Yamato with Roronoa Zoro (5000 power) → Attack Yamato with Roronoa Zoro (5000 power)"
+        "Your hand changes the board. Count your attackers and their Blockers before and after you play it.",
+        "First move: Play Roronoa Zoro.",
+        "1. Play Roronoa Zoro  2. Roronoa Zoro (slot 1) attacks their Leader  3. Roronoa Zoro (slot 2) attacks their Leader"
       ],
-      "lesson": "Reserve DON!! for Rush before attaching power. One more attack can matter more than one large attack.",
+      "lesson": "Before you attach DON!!, check whether a card in hand adds an attacker or clears a Blocker. That usually does more than +1,000.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 53,
@@ -1437,7 +1437,7 @@
         "Rush & removal",
         "Blockers"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Tsuru can block. Their hand is empty. You have 4 active DON!! and Gum-Gum Jet Pistol in hand. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -1590,7 +1590,7 @@
               "o-0"
             ]
           },
-          "why": "Gum-Gum Jet Pistol costs 4 active DON!!. Resolve the selected printed effect before choosing the next attack."
+          "why": "Play Gum-Gum Jet Pistol for 4 DON!!. It K.O.s Tsuru."
         },
         {
           "action": {
@@ -1598,15 +1598,15 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Ain: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Ain swings at their Leader Monkey.D.Luffy, 6,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Rush & removal and Blockers before committing DON!!.",
-        "Play Gum-Gum Jet Pistol → Tsuru",
-        "Play Gum-Gum Jet Pistol → Tsuru → Attack Monkey.D.Luffy with Ain (6000 power)"
+        "Your hand changes the board. Count your attackers and their Blockers before and after you play it.",
+        "First move: Play Gum-Gum Jet Pistol.",
+        "1. Play Gum-Gum Jet Pistol  2. Ain attacks their Leader"
       ],
-      "lesson": "Spend DON!! on removal before attaching power. A cleared Blocker frees your remaining attack to reach the Leader.",
+      "lesson": "Before you attach DON!!, check whether a card in hand adds an attacker or clears a Blocker. That usually does more than +1,000.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 294,
@@ -1620,9 +1620,9 @@
       "difficulty": 1,
       "concepts": [
         "Triggers & Banish",
-        "attack order"
+        "counter math"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 1 Life, 0 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Nothing on their side can block. Their hand is empty. You have 0 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -1772,7 +1772,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Roronoa Zoro swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. It hits, and Banish sends the Life card to the trash, so they get nothing back. They are at 0 Life now; the next clean hit wins."
         },
         {
           "action": {
@@ -1780,15 +1780,15 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Charlotte Daifuku: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Charlotte Daifuku swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Triggers & Banish and attack order before committing DON!!.",
-        "Attack Monkey.D.Luffy with Roronoa Zoro (7000 power)",
-        "Attack Monkey.D.Luffy with Roronoa Zoro (7000 power) → Attack Monkey.D.Luffy with Charlotte Daifuku (7000 power)"
+        "Look at their Life before you swing. What happens if the wrong attack flips it?",
+        "First move: Roronoa Zoro attacks their Leader.",
+        "1. Roronoa Zoro attacks their Leader  2. Charlotte Daifuku attacks their Leader"
       ],
-      "lesson": "Banish trashes Life without feeding the defender another counter. Attack order can turn the same board from a failed finish into lethal.",
+      "lesson": "A Life card can fight back through its Trigger. Banish trashes it instead, so choose which attacker takes the Life card.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 27,
@@ -1802,10 +1802,12 @@
       "difficulty": 3,
       "concepts": [
         "Double Attack timing",
-        "Life to hand",
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
         "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 1 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Ann can block. Their hand is empty. You have 2 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -1966,14 +1968,14 @@
               "m-0#2"
             ]
           },
-          "why": "Give 2 rested DON!! to Vito: +2000 power during your turn, without spending active DON!!. Use this once-per-turn ability before that card attacks."
+          "why": "Use Yamato's Leader ability: Vito gets 2 rested DON!! (+2,000) without touching your active DON!!. Free power comes first."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Koby goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Koby goes to 7,000 against their Leader Shanks (5,000). Ties go to the attacker. Their hand is empty right now, though any Life card they take goes there."
         },
         {
           "action": {
@@ -1981,7 +1983,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Yamato: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Your Leader Yamato swings at their Leader Shanks, 5,000 into 5,000. Ann blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -1989,7 +1991,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Vito: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Vito swings at their Leader Shanks, 7,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
         },
         {
           "action": {
@@ -1997,15 +1999,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Koby: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Viola (+2000). No active Blocker can redirect this attack."
+          "why": "Koby swings at their Leader Shanks, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Double Attack timing and Life to hand and DON!! distribution before committing DON!!.",
-        "Activate Yamato → Vito (2 rested DON!!)",
-        "Activate Yamato → Vito (2 rested DON!!) → Attach 1 DON!! to Koby → Attack Shanks with Yamato (5000 power) → Attack Shanks with Vito (7000 power) → Attack Shanks with Koby (7000 power)"
+        "Double Attack takes two Life at once, but a hit at 1 Life doesn't win. Which attack needs to land after they reach 0?",
+        "First move: Yamato's ability onto Vito.",
+        "1. Yamato's ability onto Vito  2. 1 DON!! to Koby  3. Yamato attacks their Leader  4. Vito attacks their Leader  5. Koby attacks their Leader"
       ],
-      "lesson": "Double Attack removes up to two Life, but damage taken at one Life does not win. Plan a later attack at zero Life and account for the counters that Life supplies.",
+      "lesson": "Double Attack is two damage, but a Leader at 1 Life only loses that last card. Use it to get them to 0, then finish with a separate hit.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1824,
@@ -2015,14 +2017,13 @@
     },
     {
       "id": "gen-0011",
-      "title": "Ginrummy: counter math",
+      "title": "Ginrummy: Leader abilities",
       "difficulty": 1,
       "concepts": [
-        "counter math",
-        "attack order",
-        "Blockers"
+        "Leader abilities",
+        "counter math"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 1 Life, 0 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Nothing on their side can block. Their hand is empty. You have 4 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -2184,7 +2185,7 @@
               "$don:rested:6"
             ]
           },
-          "why": "Use Kaido's printed ability now; its cost and once-per-turn limit matter before the next attack."
+          "why": "Use Kaido's Leader ability first. It costs 7 DON!! (returned to your DON!! deck) and trashes the top card of their Life."
         },
         {
           "action": {
@@ -2192,15 +2193,15 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Kaido: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Your Leader Kaido swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Activate Kaido → yes",
-        "Activate Kaido → yes → Attack Monkey.D.Luffy with Kaido (5000 power)"
+        "Long-press your Leader, Kaido, and read its ability. What does it buy you before your first attack?",
+        "First move: Kaido's ability.",
+        "1. Kaido's ability  2. Kaido attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 608,
@@ -2210,14 +2211,14 @@
     },
     {
       "id": "gen-0012",
-      "title": "Ryuma: counter math",
+      "title": "Ryuma: bait the Blocker",
       "difficulty": 4,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Twenty Doctors can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -2383,21 +2384,21 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 6,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 7,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Ryuma goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ryuma goes to 7,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -2405,7 +2406,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "T-Bone: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "T-Bone swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -2413,7 +2414,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Twenty Doctors blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -2421,15 +2422,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Ryuma: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Ryuma swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Monkey.D.Luffy",
-        "Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Ryuma → Attack Monkey.D.Luffy with T-Bone (5000 power) → Attack Monkey.D.Luffy with Monkey.D.Luffy (7000 power) → Attack Monkey.D.Luffy with Ryuma (7000 power)"
+        "Twenty Doctors can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Monkey.D.Luffy.",
+        "1. 2 DON!! to Monkey.D.Luffy  2. 1 DON!! to Ryuma  3. T-Bone attacks their Leader  4. Monkey.D.Luffy attacks their Leader  5. Ryuma attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1001,
@@ -2439,14 +2440,14 @@
     },
     {
       "id": "gen-0013",
-      "title": "Momonga: counter math",
+      "title": "Momonga: bait the Blocker",
       "difficulty": 5,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 2 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Jaguar.D.Saul (slot 1) and Jaguar.D.Saul (slot 2) can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -2628,21 +2629,21 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Miss Sarahebi goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Miss Sarahebi goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Momonga goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Momonga goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-2"
           },
-          "why": "Kalifa goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Kalifa goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -2650,7 +2651,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Crocodile, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -2658,7 +2659,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Miss Sarahebi: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Miss Sarahebi swings at their Leader Crocodile, 7,000 into 5,000. Jaguar.D.Saul (slot 1) blocks. That's 1 Blocker used up, 1 more to go. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -2666,7 +2667,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Momonga: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +0 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Momonga swings at their Leader Crocodile, 7,000 into 5,000. Jaguar.D.Saul (slot 2) blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -2674,15 +2675,15 @@
             "attacker": "m-2",
             "target": "o-L"
           },
-          "why": "Kalifa: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +0 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Kalifa swings at their Leader Crocodile, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Miss Sarahebi",
-        "Attach 1 DON!! to Miss Sarahebi → Attach 1 DON!! to Momonga → Attach 1 DON!! to Kalifa → Attack Crocodile with Monkey.D.Luffy (5000 power) → Attack Crocodile with Miss Sarahebi (7000 power) → Attack Crocodile with Momonga (7000 power) → Attack Crocodile with Kalifa (7000 power)"
+        "Their Blockers each stop one attack. Feed them attacks you don't need.",
+        "First move: 1 DON!! to Miss Sarahebi.",
+        "1. 1 DON!! to Miss Sarahebi  2. 1 DON!! to Momonga  3. 1 DON!! to Kalifa  4. Monkey.D.Luffy attacks their Leader  5. Miss Sarahebi attacks their Leader  6. Momonga attacks their Leader  7. Kalifa attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 19005,
@@ -2692,14 +2693,13 @@
     },
     {
       "id": "gen-0014",
-      "title": "Usopp: counter math",
+      "title": "Usopp: bait the Blocker",
       "difficulty": 2,
       "concepts": [
-        "counter math",
-        "DON!! distribution",
-        "Blockers"
+        "bait the Blocker",
+        "counter math"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Trafalgar Law can block. They can counter with Baron Tamago (+1,000) and Brook (+1,000). You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -2865,14 +2865,14 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Roronoa Zoro goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Roronoa Zoro goes to 6,000. Keep loading it: it's going after their Leader Yamato (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Roronoa Zoro goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Roronoa Zoro goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it, and their hand only has +2,000."
         },
         {
           "action": {
@@ -2880,7 +2880,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Baron Tamago (+1000), Brook (+1000). An active Blocker can redirect this attack."
+          "why": "Your Leader Roronoa Zoro swings at their Leader Yamato, 7,000 into 5,000. Trafalgar Law blocks. That was their last Blocker, so the next attack can't be redirected. They spend +1,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -2888,15 +2888,15 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Usopp: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Baron Tamago (+1000). No active Blocker can redirect this attack."
+          "why": "Usopp swings at their Leader Yamato, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and DON!! distribution and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Roronoa Zoro",
-        "Attach 1 DON!! to Roronoa Zoro → Attach 1 DON!! to Roronoa Zoro → Attack Yamato with Roronoa Zoro (7000 power) → Attack Yamato with Usopp (7000 power)"
+        "Trafalgar Law can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Roronoa Zoro.",
+        "1. 2 DON!! to Roronoa Zoro  2. Roronoa Zoro attacks their Leader  3. Usopp attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 321,
@@ -2910,9 +2910,9 @@
       "difficulty": 1,
       "concepts": [
         "Rush & removal",
-        "Blockers"
+        "bait the Blocker"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Brook can block. Their hand is empty. You have 5 active DON!! and Roronoa Zoro in hand. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -3063,7 +3063,7 @@
             "uid": "play-rush",
             "targets": []
           },
-          "why": "Roronoa Zoro costs 3 active DON!!. Rush supplies an attacker immediately."
+          "why": "Play Roronoa Zoro for 3 DON!!. Rush means it can attack this turn, which gives you one more attacker than they planned for."
         },
         {
           "action": {
@@ -3071,7 +3071,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Roronoa Zoro (slot 1) swings at their Leader Yamato, 5,000 into 5,000. Brook blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -3079,15 +3079,15 @@
             "attacker": "play-rush",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Roronoa Zoro (slot 2) swings at their Leader Yamato, 5,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Rush & removal and Blockers before committing DON!!.",
-        "Play Roronoa Zoro",
-        "Play Roronoa Zoro → Attack Yamato with Roronoa Zoro (5000 power) → Attack Yamato with Roronoa Zoro (5000 power)"
+        "Your hand changes the board. Count your attackers and their Blockers before and after you play it.",
+        "First move: Play Roronoa Zoro.",
+        "1. Play Roronoa Zoro  2. Roronoa Zoro (slot 1) attacks their Leader  3. Roronoa Zoro (slot 2) attacks their Leader"
       ],
-      "lesson": "Reserve DON!! for Rush before attaching power. One more attack can matter more than one large attack.",
+      "lesson": "Before you attach DON!!, check whether a card in hand adds an attacker or clears a Blocker. That usually does more than +1,000.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 48,
@@ -3097,14 +3097,14 @@
     },
     {
       "id": "gen-0016",
-      "title": "T-Bone: counter math",
+      "title": "T-Bone: bait the Blocker",
       "difficulty": 4,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Tony Tony.Chopper can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -3270,21 +3270,21 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 6,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 7,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Kalifa goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Kalifa goes to 7,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -3292,7 +3292,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "T-Bone: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "T-Bone swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -3300,7 +3300,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Tony Tony.Chopper blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -3308,15 +3308,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Kalifa: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Kalifa swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Monkey.D.Luffy",
-        "Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Kalifa → Attack Monkey.D.Luffy with T-Bone (5000 power) → Attack Monkey.D.Luffy with Monkey.D.Luffy (7000 power) → Attack Monkey.D.Luffy with Kalifa (7000 power)"
+        "Tony Tony.Chopper can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Monkey.D.Luffy.",
+        "1. 2 DON!! to Monkey.D.Luffy  2. 1 DON!! to Kalifa  3. T-Bone attacks their Leader  4. Monkey.D.Luffy attacks their Leader  5. Kalifa attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 996,
@@ -3326,14 +3326,14 @@
     },
     {
       "id": "gen-0017",
-      "title": "Momonga: counter math",
+      "title": "Momonga: bait the Blocker",
       "difficulty": 5,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 2 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Ann and Black Maria can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -3515,21 +3515,21 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Miss Sarahebi goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Miss Sarahebi goes to 7,000 against their Leader Shanks (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Momonga goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Momonga (slot 2) goes to 7,000 against their Leader Shanks (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-2"
           },
-          "why": "Momonga goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Momonga (slot 3) goes to 7,000 against their Leader Shanks (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -3537,7 +3537,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Shanks, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -3545,7 +3545,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Miss Sarahebi: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Miss Sarahebi swings at their Leader Shanks, 7,000 into 5,000. Ann blocks and is K.O.'d. That's 1 Blocker used up, 1 more to go."
         },
         {
           "action": {
@@ -3553,7 +3553,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Momonga: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Momonga (slot 2) swings at their Leader Shanks, 7,000 into 5,000. Black Maria blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -3561,15 +3561,15 @@
             "attacker": "m-2",
             "target": "o-L"
           },
-          "why": "Momonga: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Momonga (slot 3) swings at their Leader Shanks, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Miss Sarahebi",
-        "Attach 1 DON!! to Miss Sarahebi → Attach 1 DON!! to Momonga → Attach 1 DON!! to Momonga → Attack Shanks with Monkey.D.Luffy (5000 power) → Attack Shanks with Miss Sarahebi (7000 power) → Attack Shanks with Momonga (7000 power) → Attack Shanks with Momonga (7000 power)"
+        "Their Blockers each stop one attack. Feed them attacks you don't need.",
+        "First move: 1 DON!! to Miss Sarahebi.",
+        "1. 1 DON!! to Miss Sarahebi  2. 1 DON!! to Momonga (slot 2)  3. 1 DON!! to Momonga (slot 3)  4. Monkey.D.Luffy attacks their Leader  5. Miss Sarahebi attacks their Leader  6. Momonga (slot 2) attacks their Leader  7. Momonga (slot 3) attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 8014,
@@ -3579,13 +3579,12 @@
     },
     {
       "id": "gen-0018",
-      "title": "Charlotte Anana: DON!! distribution",
+      "title": "Charlotte Anana: bait the Blocker",
       "difficulty": 2,
       "concepts": [
-        "DON!! distribution",
-        "Blockers"
+        "bait the Blocker"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Trafalgar Law can block. Their hand is empty. You have 2 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -3734,14 +3733,14 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Charlotte Anana goes from 3000 to 4000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Charlotte Anana goes to 4,000. Keep loading it: it's going after their Leader Yamato (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Charlotte Anana goes from 4000 to 5000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Charlotte Anana goes to 5,000 against their Leader Yamato (5,000). Ties go to the attacker. Their hand is empty, so nothing can counter it."
         },
         {
           "action": {
@@ -3749,7 +3748,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Charlotte Anana: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Charlotte Anana swings at their Leader Yamato, 5,000 into 5,000. Trafalgar Law blocks. That was their last Blocker, so the next attack can't be redirected. Trafalgar Law survives, but it's rested now and can't block again."
         },
         {
           "action": {
@@ -3757,15 +3756,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Mamboshi: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Mamboshi swings at their Leader Yamato, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about DON!! distribution and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Charlotte Anana",
-        "Attach 1 DON!! to Charlotte Anana → Attach 1 DON!! to Charlotte Anana → Attack Yamato with Charlotte Anana (5000 power) → Attack Yamato with Mamboshi (7000 power)"
+        "Trafalgar Law can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Charlotte Anana.",
+        "1. 2 DON!! to Charlotte Anana  2. Charlotte Anana attacks their Leader  3. Mamboshi attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 117,
@@ -3779,9 +3778,9 @@
       "difficulty": 1,
       "concepts": [
         "Rush & removal",
-        "Blockers"
+        "bait the Blocker"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Tsuru can block. Their hand is empty. You have 5 active DON!! and Roronoa Zoro in hand. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -3932,7 +3931,7 @@
             "uid": "play-rush",
             "targets": []
           },
-          "why": "Roronoa Zoro costs 3 active DON!!. Rush supplies an attacker immediately."
+          "why": "Play Roronoa Zoro for 3 DON!!. Rush means it can attack this turn, which gives you one more attacker than they planned for."
         },
         {
           "action": {
@@ -3940,7 +3939,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Roronoa Zoro (slot 1) swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. Tsuru blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -3948,15 +3947,15 @@
             "attacker": "play-rush",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Roronoa Zoro (slot 2) swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Rush & removal and Blockers before committing DON!!.",
-        "Play Roronoa Zoro",
-        "Play Roronoa Zoro → Attack Monkey.D.Luffy with Roronoa Zoro (5000 power) → Attack Monkey.D.Luffy with Roronoa Zoro (5000 power)"
+        "Your hand changes the board. Count your attackers and their Blockers before and after you play it.",
+        "First move: Play Roronoa Zoro.",
+        "1. Play Roronoa Zoro  2. Roronoa Zoro (slot 1) attacks their Leader  3. Roronoa Zoro (slot 2) attacks their Leader"
       ],
-      "lesson": "Reserve DON!! for Rush before attaching power. One more attack can matter more than one large attack.",
+      "lesson": "Before you attach DON!!, check whether a card in hand adds an attacker or clears a Blocker. That usually does more than +1,000.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 48,
@@ -3966,14 +3965,14 @@
     },
     {
       "id": "gen-0020",
-      "title": "Miss Sarahebi: counter math",
+      "title": "Miss Sarahebi: bait the Blocker",
       "difficulty": 4,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Jaguar.D.Saul can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -4139,21 +4138,21 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 6,000. Keep loading it: it's going after their Leader Crocodile (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Miss Sarahebi goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Miss Sarahebi goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -4161,7 +4160,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "T-Bone: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "T-Bone swings at their Leader Crocodile, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -4169,7 +4168,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Crocodile, 7,000 into 5,000. Jaguar.D.Saul blocks. That was their last Blocker, so the next attack can't be redirected. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -4177,15 +4176,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Miss Sarahebi: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +0 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Miss Sarahebi swings at their Leader Crocodile, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Monkey.D.Luffy",
-        "Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Miss Sarahebi → Attack Crocodile with T-Bone (5000 power) → Attack Crocodile with Monkey.D.Luffy (7000 power) → Attack Crocodile with Miss Sarahebi (7000 power)"
+        "Jaguar.D.Saul can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Monkey.D.Luffy.",
+        "1. 2 DON!! to Monkey.D.Luffy  2. 1 DON!! to Miss Sarahebi  3. T-Bone attacks their Leader  4. Monkey.D.Luffy attacks their Leader  5. Miss Sarahebi attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1302,
@@ -4195,14 +4194,14 @@
     },
     {
       "id": "gen-0021",
-      "title": "Kalifa: counter math",
+      "title": "Kalifa: bait the Blocker",
       "difficulty": 5,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 2 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Black Maria and Ann can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -4384,21 +4383,21 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Kalifa goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Kalifa goes to 7,000 against their Leader Kaido (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Ryuma goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ryuma (slot 2) goes to 7,000 against their Leader Kaido (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-2"
           },
-          "why": "Ryuma goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ryuma (slot 3) goes to 7,000 against their Leader Kaido (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -4406,7 +4405,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Kaido, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -4414,7 +4413,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Kalifa: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Kalifa swings at their Leader Kaido, 7,000 into 5,000. Black Maria blocks and is K.O.'d. That's 1 Blocker used up, 1 more to go."
         },
         {
           "action": {
@@ -4422,7 +4421,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Ryuma: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Ryuma (slot 2) swings at their Leader Kaido, 7,000 into 5,000. Ann blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -4430,15 +4429,15 @@
             "attacker": "m-2",
             "target": "o-L"
           },
-          "why": "Ryuma: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Ryuma (slot 3) swings at their Leader Kaido, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Kalifa",
-        "Attach 1 DON!! to Kalifa → Attach 1 DON!! to Ryuma → Attach 1 DON!! to Ryuma → Attack Kaido with Monkey.D.Luffy (5000 power) → Attack Kaido with Kalifa (7000 power) → Attack Kaido with Ryuma (7000 power) → Attack Kaido with Ryuma (7000 power)"
+        "Their Blockers each stop one attack. Feed them attacks you don't need.",
+        "First move: 1 DON!! to Kalifa.",
+        "1. 1 DON!! to Kalifa  2. 1 DON!! to Ryuma (slot 2)  3. 1 DON!! to Ryuma (slot 3)  4. Monkey.D.Luffy attacks their Leader  5. Kalifa attacks their Leader  6. Ryuma (slot 2) attacks their Leader  7. Ryuma (slot 3) attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 8014,
@@ -4452,10 +4451,12 @@
       "difficulty": 4,
       "concepts": [
         "Double Attack timing",
-        "Life to hand",
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
         "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 2 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader has 2 Life cards left, so it has to lose all of them before a final hit can win. Jaguar.D.Saul can block. Their hand is empty. You have 2 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -4624,21 +4625,21 @@
               "m-0#2"
             ]
           },
-          "why": "Give 2 rested DON!! to Eustass\"Captain\"Kid: +2000 power during your turn, without spending active DON!!. Use this once-per-turn ability before that card attacks."
+          "why": "Use Yamato's Leader ability: Eustass\"Captain\"Kid gets 2 rested DON!! (+2,000) without touching your active DON!!. Free power comes first."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Eustass\"Captain\"Kid goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Eustass\"Captain\"Kid goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. Their hand is empty right now, though any Life card they take goes there."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Koby goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Koby goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. Their hand is empty right now, though any Life card they take goes there."
         },
         {
           "action": {
@@ -4646,7 +4647,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Yamato: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Your Leader Yamato swings at their Leader Crocodile, 5,000 into 5,000. Jaguar.D.Saul blocks. That was their last Blocker, so the next attack can't be redirected. Jaguar.D.Saul survives, but it's rested now and can't block again."
         },
         {
           "action": {
@@ -4654,7 +4655,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Eustass\"Captain\"Kid: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Eustass\"Captain\"Kid swings at their Leader Crocodile, 7,000 into 5,000. It hits. They take 2 Life cards into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
         },
         {
           "action": {
@@ -4662,15 +4663,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Koby: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Jaguar.D.Saul (+1000), Marshall.D.Teach (+1000). No active Blocker can redirect this attack."
+          "why": "Koby swings at their Leader Crocodile, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Double Attack timing and Life to hand and DON!! distribution before committing DON!!.",
-        "Activate Yamato → Eustass\"Captain\"Kid (2 rested DON!!)",
-        "Activate Yamato → Eustass\"Captain\"Kid (2 rested DON!!) → Attach 1 DON!! to Eustass\"Captain\"Kid → Attach 1 DON!! to Koby → Attack Crocodile with Yamato (5000 power) → Attack Crocodile with Eustass\"Captain\"Kid (7000 power) → Attack Crocodile with Koby (7000 power)"
+        "Double Attack takes two Life at once, but a hit at 1 Life doesn't win. Which attack needs to land after they reach 0?",
+        "First move: Yamato's ability onto Eustass\"Captain\"Kid.",
+        "1. Yamato's ability onto Eustass\"Captain\"Kid  2. 1 DON!! to Eustass\"Captain\"Kid  3. 1 DON!! to Koby  4. Yamato attacks their Leader  5. Eustass\"Captain\"Kid attacks their Leader  6. Koby attacks their Leader"
       ],
-      "lesson": "Double Attack removes up to two Life, but damage taken at one Life does not win. Plan a later attack at zero Life and account for the counters that Life supplies.",
+      "lesson": "Double Attack is two damage, but a Leader at 1 Life only loses that last card. Use it to get them to 0, then finish with a separate hit.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 7880,
@@ -4680,14 +4681,14 @@
     },
     {
       "id": "gen-0023",
-      "title": "Kalifa: counter math",
+      "title": "Kalifa: bait the Blocker",
       "difficulty": 4,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Cerberus can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -4853,21 +4854,21 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 6,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 7,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Kalifa goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Kalifa goes to 7,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -4875,7 +4876,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "T-Bone: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "T-Bone swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -4883,7 +4884,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Cerberus blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -4891,15 +4892,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Kalifa: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Kalifa swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Monkey.D.Luffy",
-        "Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Kalifa → Attack Monkey.D.Luffy with T-Bone (5000 power) → Attack Monkey.D.Luffy with Monkey.D.Luffy (7000 power) → Attack Monkey.D.Luffy with Kalifa (7000 power)"
+        "Cerberus can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Monkey.D.Luffy.",
+        "1. 2 DON!! to Monkey.D.Luffy  2. 1 DON!! to Kalifa  3. T-Bone attacks their Leader  4. Monkey.D.Luffy attacks their Leader  5. Kalifa attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1001,
@@ -4909,14 +4910,14 @@
     },
     {
       "id": "gen-0024",
-      "title": "Momonga: counter math",
+      "title": "Momonga: bait the Blocker",
       "difficulty": 5,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 2 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Blueno and Trafalgar Law can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -5098,21 +5099,21 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Miss Sarahebi goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Miss Sarahebi goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Kalifa goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Kalifa goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-2"
           },
-          "why": "Momonga goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Momonga goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -5120,7 +5121,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Yamato, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -5128,7 +5129,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Miss Sarahebi: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Miss Sarahebi swings at their Leader Yamato, 7,000 into 5,000. Trafalgar Law blocks. That's 1 Blocker used up, 1 more to go. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -5136,7 +5137,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Kalifa: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +0 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Kalifa swings at their Leader Yamato, 7,000 into 5,000. Blueno blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -5144,15 +5145,15 @@
             "attacker": "m-2",
             "target": "o-L"
           },
-          "why": "Momonga: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +0 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Momonga swings at their Leader Yamato, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Miss Sarahebi",
-        "Attach 1 DON!! to Miss Sarahebi → Attach 1 DON!! to Kalifa → Attach 1 DON!! to Momonga → Attack Yamato with Monkey.D.Luffy (5000 power) → Attack Yamato with Miss Sarahebi (7000 power) → Attack Yamato with Kalifa (7000 power) → Attack Yamato with Momonga (7000 power)"
+        "Their Blockers each stop one attack. Feed them attacks you don't need.",
+        "First move: 1 DON!! to Miss Sarahebi.",
+        "1. 1 DON!! to Miss Sarahebi  2. 1 DON!! to Kalifa  3. 1 DON!! to Momonga  4. Monkey.D.Luffy attacks their Leader  5. Miss Sarahebi attacks their Leader  6. Kalifa attacks their Leader  7. Momonga attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 13879,
@@ -5166,10 +5167,12 @@
       "difficulty": 2,
       "concepts": [
         "Double Attack timing",
-        "Life to hand",
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
         "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 1 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Twenty Doctors can block. Their hand is empty. You have 2 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -5330,7 +5333,7 @@
               "m-1#1"
             ]
           },
-          "why": "Give 1 rested DON!! to Vito: +1000 power during your turn, without spending active DON!!. Use this once-per-turn ability before that card attacks."
+          "why": "Use Yamato's Leader ability: Vito gets 1 rested DON!! (+1,000) without touching your active DON!!. Free power comes first."
         },
         {
           "action": {
@@ -5338,7 +5341,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Yamato: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Your Leader Yamato swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. Twenty Doctors blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -5346,7 +5349,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Surume: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Surume swings at their Leader Monkey.D.Luffy, 6,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
         },
         {
           "action": {
@@ -5354,15 +5357,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Vito: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Nico Robin (+1000). No active Blocker can redirect this attack."
+          "why": "Vito swings at their Leader Monkey.D.Luffy, 6,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Double Attack timing and Life to hand and DON!! distribution before committing DON!!.",
-        "Activate Yamato → Vito (1 rested DON!!)",
-        "Activate Yamato → Vito (1 rested DON!!) → Attack Monkey.D.Luffy with Yamato (5000 power) → Attack Monkey.D.Luffy with Surume (6000 power) → Attack Monkey.D.Luffy with Vito (6000 power)"
+        "Double Attack takes two Life at once, but a hit at 1 Life doesn't win. Which attack needs to land after they reach 0?",
+        "First move: Yamato's ability onto Vito.",
+        "1. Yamato's ability onto Vito  2. Yamato attacks their Leader  3. Surume attacks their Leader  4. Vito attacks their Leader"
       ],
-      "lesson": "Double Attack removes up to two Life, but damage taken at one Life does not win. Plan a later attack at zero Life and account for the counters that Life supplies.",
+      "lesson": "Double Attack is two damage, but a Leader at 1 Life only loses that last card. Use it to get them to 0, then finish with a separate hit.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 404,
@@ -5372,14 +5375,14 @@
     },
     {
       "id": "gen-0026",
-      "title": "Ryuma: counter math",
+      "title": "Ryuma: bait the Blocker",
       "difficulty": 4,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Trafalgar Law can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -5545,21 +5548,21 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 6,000. Keep loading it: it's going after their Leader Yamato (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Ryuma goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ryuma goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -5567,7 +5570,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "T-Bone: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "T-Bone swings at their Leader Yamato, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -5575,7 +5578,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Yamato, 7,000 into 5,000. Trafalgar Law blocks. That was their last Blocker, so the next attack can't be redirected. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -5583,15 +5586,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Ryuma: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +0 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Ryuma swings at their Leader Yamato, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Monkey.D.Luffy",
-        "Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Ryuma → Attack Yamato with T-Bone (5000 power) → Attack Yamato with Monkey.D.Luffy (7000 power) → Attack Yamato with Ryuma (7000 power)"
+        "Trafalgar Law can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Monkey.D.Luffy.",
+        "1. 2 DON!! to Monkey.D.Luffy  2. 1 DON!! to Ryuma  3. T-Bone attacks their Leader  4. Monkey.D.Luffy attacks their Leader  5. Ryuma attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1302,
@@ -5601,14 +5604,14 @@
     },
     {
       "id": "gen-0027",
-      "title": "Ryuma: counter math",
+      "title": "Ryuma: bait the Blocker",
       "difficulty": 5,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 2 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Twenty Doctors and Tony Tony.Chopper can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -5790,21 +5793,21 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Ryuma goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ryuma (slot 1) goes to 7,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Momonga goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Momonga goes to 7,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-2"
           },
-          "why": "Ryuma goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ryuma (slot 3) goes to 7,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -5812,7 +5815,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Roronoa Zoro, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -5820,7 +5823,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Ryuma: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Ryuma (slot 1) swings at their Leader Roronoa Zoro, 7,000 into 5,000. Twenty Doctors blocks and is K.O.'d. That's 1 Blocker used up, 1 more to go."
         },
         {
           "action": {
@@ -5828,7 +5831,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Momonga: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Momonga swings at their Leader Roronoa Zoro, 7,000 into 5,000. Tony Tony.Chopper blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -5836,15 +5839,15 @@
             "attacker": "m-2",
             "target": "o-L"
           },
-          "why": "Ryuma: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Ryuma (slot 3) swings at their Leader Roronoa Zoro, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Ryuma",
-        "Attach 1 DON!! to Ryuma → Attach 1 DON!! to Momonga → Attach 1 DON!! to Ryuma → Attack Roronoa Zoro with Monkey.D.Luffy (5000 power) → Attack Roronoa Zoro with Ryuma (7000 power) → Attack Roronoa Zoro with Momonga (7000 power) → Attack Roronoa Zoro with Ryuma (7000 power)"
+        "Their Blockers each stop one attack. Feed them attacks you don't need.",
+        "First move: 1 DON!! to Ryuma (slot 1).",
+        "1. 1 DON!! to Ryuma (slot 1)  2. 1 DON!! to Momonga  3. 1 DON!! to Ryuma (slot 3)  4. Monkey.D.Luffy attacks their Leader  5. Ryuma (slot 1) attacks their Leader  6. Momonga attacks their Leader  7. Ryuma (slot 3) attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 8007,
@@ -5854,14 +5857,14 @@
     },
     {
       "id": "gen-0028",
-      "title": "Edward Weevil: counter math",
+      "title": "Edward Weevil: Leader abilities",
       "difficulty": 3,
       "concepts": [
+        "Leader abilities",
         "counter math",
-        "DON!! distribution",
         "Blockers"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Twenty Doctors can block. They can counter with Twenty Doctors (+1,000) and Nico Robin (+1,000). You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -6031,28 +6034,28 @@
               "$don:rested:4"
             ]
           },
-          "why": "Use Crocodile's printed ability now; its cost and once-per-turn limit matter before the next attack."
+          "why": "Use Crocodile's Leader ability first. It costs 4 DON!! (returned to your DON!! deck) and sends Twenty Doctors back to its owner's hand."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Crocodile goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Crocodile goes to 6,000. Keep loading it: it's going after their Leader Roronoa Zoro (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Crocodile goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Crocodile goes to 7,000. Keep loading it: it's going after their Leader Roronoa Zoro (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Crocodile goes from 7000 to 8000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Crocodile goes to 8,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. They'd need +4,000 to stop it, and their hand only has +3,000."
         },
         {
           "action": {
@@ -6060,15 +6063,15 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Crocodile: 8000 into 5000 needs at least +4000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Twenty Doctors (+1000), Nico Robin (+1000), Twenty Doctors (+1000). No active Blocker can redirect this attack."
+          "why": "Your Leader Crocodile swings at their Leader Roronoa Zoro, 8,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and DON!! distribution and Blockers before committing DON!!.",
-        "Activate Crocodile → Twenty Doctors",
-        "Activate Crocodile → Twenty Doctors → Attach 1 DON!! to Crocodile → Attach 1 DON!! to Crocodile → Attach 1 DON!! to Crocodile → Attack Roronoa Zoro with Crocodile (8000 power)"
+        "Long-press your Leader, Crocodile, and read its ability. What does it buy you before your first attack?",
+        "First move: Crocodile's ability.",
+        "1. Crocodile's ability  2. 3 DON!! to Crocodile  3. Crocodile attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 3105,
@@ -6078,14 +6081,14 @@
     },
     {
       "id": "gen-0029",
-      "title": "Momonga: counter math",
+      "title": "Momonga: bait the Blocker",
       "difficulty": 4,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Black Maria can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -6251,21 +6254,21 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 6,000. Keep loading it: it's going after their Leader Shanks (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 7,000 against their Leader Shanks (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Momonga goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Momonga goes to 7,000 against their Leader Shanks (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -6273,7 +6276,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "T-Bone: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "T-Bone swings at their Leader Shanks, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -6281,7 +6284,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Shanks, 7,000 into 5,000. Black Maria blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -6289,15 +6292,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Momonga: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Momonga swings at their Leader Shanks, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Monkey.D.Luffy",
-        "Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Momonga → Attack Shanks with T-Bone (5000 power) → Attack Shanks with Monkey.D.Luffy (7000 power) → Attack Shanks with Momonga (7000 power)"
+        "Black Maria can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Monkey.D.Luffy.",
+        "1. 2 DON!! to Monkey.D.Luffy  2. 1 DON!! to Momonga  3. T-Bone attacks their Leader  4. Monkey.D.Luffy attacks their Leader  5. Momonga attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1001,
@@ -6307,14 +6310,14 @@
     },
     {
       "id": "gen-0030",
-      "title": "Kalifa: counter math",
+      "title": "Kalifa: bait the Blocker",
       "difficulty": 5,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 2 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Brook and Trafalgar Law can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -6496,21 +6499,21 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Ryuma goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ryuma goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Kalifa goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Kalifa goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-2"
           },
-          "why": "Miss Sarahebi goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Miss Sarahebi goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -6518,7 +6521,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Yamato, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -6526,7 +6529,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Ryuma: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Ryuma swings at their Leader Yamato, 7,000 into 5,000. Trafalgar Law blocks. That's 1 Blocker used up, 1 more to go. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -6534,7 +6537,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Kalifa: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +0 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Kalifa swings at their Leader Yamato, 7,000 into 5,000. Brook blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -6542,15 +6545,15 @@
             "attacker": "m-2",
             "target": "o-L"
           },
-          "why": "Miss Sarahebi: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +0 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Miss Sarahebi swings at their Leader Yamato, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Ryuma",
-        "Attach 1 DON!! to Ryuma → Attach 1 DON!! to Kalifa → Attach 1 DON!! to Miss Sarahebi → Attack Yamato with Monkey.D.Luffy (5000 power) → Attack Yamato with Ryuma (7000 power) → Attack Yamato with Kalifa (7000 power) → Attack Yamato with Miss Sarahebi (7000 power)"
+        "Their Blockers each stop one attack. Feed them attacks you don't need.",
+        "First move: 1 DON!! to Ryuma.",
+        "1. 1 DON!! to Ryuma  2. 1 DON!! to Kalifa  3. 1 DON!! to Miss Sarahebi  4. Monkey.D.Luffy attacks their Leader  5. Ryuma attacks their Leader  6. Kalifa attacks their Leader  7. Miss Sarahebi attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 13879,
@@ -6560,13 +6563,12 @@
     },
     {
       "id": "gen-0031",
-      "title": "Jango: DON!! distribution",
+      "title": "Jango: bait the Blocker",
       "difficulty": 2,
       "concepts": [
-        "DON!! distribution",
-        "Blockers"
+        "bait the Blocker"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Trafalgar Law can block. Their hand is empty. You have 2 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -6715,14 +6717,14 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Jango goes from 3000 to 4000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Jango goes to 4,000. Keep loading it: it's going after their Leader Yamato (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Jango goes from 4000 to 5000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Jango goes to 5,000 against their Leader Yamato (5,000). Ties go to the attacker. Their hand is empty, so nothing can counter it."
         },
         {
           "action": {
@@ -6730,7 +6732,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Jango: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Jango swings at their Leader Yamato, 5,000 into 5,000. Trafalgar Law blocks. That was their last Blocker, so the next attack can't be redirected. Trafalgar Law survives, but it's rested now and can't block again."
         },
         {
           "action": {
@@ -6738,15 +6740,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Miss Sarahebi: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Miss Sarahebi swings at their Leader Yamato, 6,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about DON!! distribution and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Jango",
-        "Attach 1 DON!! to Jango → Attach 1 DON!! to Jango → Attack Yamato with Jango (5000 power) → Attack Yamato with Miss Sarahebi (6000 power)"
+        "Trafalgar Law can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Jango.",
+        "1. 2 DON!! to Jango  2. Jango attacks their Leader  3. Miss Sarahebi attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 127,
@@ -6756,14 +6758,14 @@
     },
     {
       "id": "gen-0032",
-      "title": "T-Bone: counter math",
+      "title": "T-Bone: bait the Blocker",
       "difficulty": 4,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s). Hidden-hand rule: their hand contains only color-legal Characters, each with at most +2000 counter; no Counter Events. The walkthrough wins even if every card has +2000.",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Black Maria can block. They hold 2 face-down cards. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -6929,21 +6931,21 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 6,000. Keep loading it: it's going after their Leader Shanks (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 7,000 against their Leader Shanks (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Momonga goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Momonga goes to 7,000 against their Leader Shanks (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -6951,7 +6953,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "T-Bone: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +4000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "T-Bone swings at their Leader Shanks, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -6959,7 +6961,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Shanks, 7,000 into 5,000. Black Maria blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -6967,15 +6969,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Momonga: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. The hidden-hand rule allows up to +2000 total Character counter power. No active Blocker can redirect this attack."
+          "why": "Momonga swings at their Leader Shanks, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Monkey.D.Luffy",
-        "Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Momonga → Attack Shanks with T-Bone (5000 power) → Attack Shanks with Monkey.D.Luffy (7000 power) → Attack Shanks with Momonga (7000 power)"
+        "Black Maria can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Monkey.D.Luffy.",
+        "1. 2 DON!! to Monkey.D.Luffy  2. 1 DON!! to Momonga  3. T-Bone attacks their Leader  4. Monkey.D.Luffy attacks their Leader  5. Momonga attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1001,
@@ -6985,14 +6987,14 @@
     },
     {
       "id": "gen-0033",
-      "title": "Miss Sarahebi: counter math",
+      "title": "Miss Sarahebi: bait the Blocker",
       "difficulty": 5,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 2 Blocker(s), and 2 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Capone\"Gang\"Bege and Blueno can block. They can counter with Bird Neptunian (+2,000) and Charlotte Chiffon (+2,000). You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -7174,21 +7176,21 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Miss Sarahebi goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Miss Sarahebi (slot 1) goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Miss Sarahebi goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Miss Sarahebi (slot 2) goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-2"
           },
-          "why": "Ryuma goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ryuma goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -7196,7 +7198,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Bird Neptunian (+2000), Charlotte Chiffon (+2000). An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Yamato, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -7204,7 +7206,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Miss Sarahebi: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Bird Neptunian (+2000). An active Blocker can redirect this attack."
+          "why": "Miss Sarahebi (slot 1) swings at their Leader Yamato, 7,000 into 5,000. Capone\"Gang\"Bege blocks and is K.O.'d. That's 1 Blocker used up, 1 more to go."
         },
         {
           "action": {
@@ -7212,7 +7214,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Miss Sarahebi: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Bird Neptunian (+2000). An active Blocker can redirect this attack."
+          "why": "Miss Sarahebi (slot 2) swings at their Leader Yamato, 7,000 into 5,000. Blueno blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -7220,15 +7222,15 @@
             "attacker": "m-2",
             "target": "o-L"
           },
-          "why": "Ryuma: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Bird Neptunian (+2000). No active Blocker can redirect this attack."
+          "why": "Ryuma swings at their Leader Yamato, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Miss Sarahebi",
-        "Attach 1 DON!! to Miss Sarahebi → Attach 1 DON!! to Miss Sarahebi → Attach 1 DON!! to Ryuma → Attack Yamato with Monkey.D.Luffy (5000 power) → Attack Yamato with Miss Sarahebi (7000 power) → Attack Yamato with Miss Sarahebi (7000 power) → Attack Yamato with Ryuma (7000 power)"
+        "Their Blockers each stop one attack. Feed them attacks you don't need.",
+        "First move: 1 DON!! to Miss Sarahebi (slot 1).",
+        "1. 1 DON!! to Miss Sarahebi (slot 1)  2. 1 DON!! to Miss Sarahebi (slot 2)  3. 1 DON!! to Ryuma  4. Monkey.D.Luffy attacks their Leader  5. Miss Sarahebi (slot 1) attacks their Leader  6. Miss Sarahebi (slot 2) attacks their Leader  7. Ryuma attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 8007,
@@ -7238,14 +7240,13 @@
     },
     {
       "id": "gen-0034",
-      "title": "Ain: counter math",
+      "title": "Ain: bait the Blocker",
       "difficulty": 2,
       "concepts": [
-        "counter math",
-        "DON!! distribution",
-        "Blockers"
+        "bait the Blocker",
+        "counter math"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Capone\"Gang\"Bege can block. They can counter with Nekomamushi (+1,000) and Koby (+1,000). You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -7411,7 +7412,7 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Kaido goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Kaido goes to 6,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +2,000 to stop it."
         },
         {
           "action": {
@@ -7419,7 +7420,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Ain: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Nekomamushi (+1000), Koby (+1000). An active Blocker can redirect this attack."
+          "why": "Ain swings at their Leader Yamato, 5,000 into 5,000. They spend +1,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -7427,7 +7428,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Kaido: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Nekomamushi (+1000). An active Blocker can redirect this attack."
+          "why": "Your Leader Kaido swings at their Leader Yamato, 6,000 into 5,000. Capone\"Gang\"Bege blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -7435,15 +7436,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Viola: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Nekomamushi (+1000). No active Blocker can redirect this attack."
+          "why": "Viola swings at their Leader Yamato, 6,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and DON!! distribution and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Kaido",
-        "Attach 1 DON!! to Kaido → Attack Yamato with Ain (5000 power) → Attack Yamato with Kaido (6000 power) → Attack Yamato with Viola (6000 power)"
+        "Capone\"Gang\"Bege can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 1 DON!! to Kaido.",
+        "1. 1 DON!! to Kaido  2. Ain attacks their Leader  3. Kaido attacks their Leader  4. Viola attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 625,
@@ -7453,14 +7454,14 @@
     },
     {
       "id": "gen-0035",
-      "title": "Ryuma: counter math",
+      "title": "Ryuma: bait the Blocker",
       "difficulty": 5,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "attack order",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 2 Blocker(s), and 2 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Jaguar.D.Saul and Trafalgar Law can block. They can counter with Tony Tony.Chopper (+2,000) and Vinsmoke Niji (+2,000). You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -7642,21 +7643,21 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Momonga goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Momonga (slot 1) goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Ryuma goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ryuma goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-2"
           },
-          "why": "Momonga goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Momonga (slot 3) goes to 7,000 against their Leader Crocodile (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
         },
         {
           "action": {
@@ -7664,7 +7665,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Tony Tony.Chopper (+2000), Vinsmoke Niji (+2000). An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Crocodile, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -7672,7 +7673,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Momonga: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Tony Tony.Chopper (+2000). An active Blocker can redirect this attack."
+          "why": "Momonga (slot 1) swings at their Leader Crocodile, 7,000 into 5,000. Jaguar.D.Saul blocks. That's 1 Blocker used up, 1 more to go. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -7680,7 +7681,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Ryuma: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Ryuma swings at their Leader Crocodile, 7,000 into 5,000. Trafalgar Law blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -7688,15 +7689,15 @@
             "attacker": "m-2",
             "target": "o-L"
           },
-          "why": "Momonga: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Momonga (slot 3) swings at their Leader Crocodile, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and attack order and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Momonga",
-        "Attach 1 DON!! to Momonga → Attach 1 DON!! to Ryuma → Attach 1 DON!! to Momonga → Attack Crocodile with Monkey.D.Luffy (5000 power) → Attack Crocodile with Momonga (7000 power) → Attack Crocodile with Ryuma (7000 power) → Attack Crocodile with Momonga (7000 power)"
+        "Their Blockers each stop one attack. Feed them attacks you don't need.",
+        "First move: 1 DON!! to Momonga (slot 1).",
+        "1. 1 DON!! to Momonga (slot 1)  2. 1 DON!! to Ryuma  3. 1 DON!! to Momonga (slot 3)  4. Monkey.D.Luffy attacks their Leader  5. Momonga (slot 1) attacks their Leader  6. Ryuma attacks their Leader  7. Momonga (slot 3) attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 13458,
@@ -7706,13 +7707,12 @@
     },
     {
       "id": "gen-0036",
-      "title": "Ginrummy: DON!! distribution",
+      "title": "Ginrummy: bait the Blocker",
       "difficulty": 2,
       "concepts": [
-        "DON!! distribution",
-        "Blockers"
+        "bait the Blocker"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Tsuru can block. Their hand is empty. You have 2 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -7861,14 +7861,14 @@
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Ginrummy goes from 3000 to 4000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ginrummy goes to 4,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Ginrummy goes from 4000 to 5000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Ginrummy goes to 5,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. Their hand is empty, so nothing can counter it."
         },
         {
           "action": {
@@ -7876,7 +7876,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Ginrummy: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Ginrummy swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. Tsuru blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -7884,15 +7884,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Charlotte Daifuku: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Charlotte Daifuku swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about DON!! distribution and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Ginrummy",
-        "Attach 1 DON!! to Ginrummy → Attach 1 DON!! to Ginrummy → Attack Monkey.D.Luffy with Ginrummy (5000 power) → Attack Monkey.D.Luffy with Charlotte Daifuku (7000 power)"
+        "Tsuru can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Ginrummy.",
+        "1. 2 DON!! to Ginrummy  2. Ginrummy attacks their Leader  3. Charlotte Daifuku attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 604,
@@ -7902,14 +7902,14 @@
     },
     {
       "id": "gen-0037",
-      "title": "Roronoa Zoro: counter math",
+      "title": "Roronoa Zoro: Double Attack timing",
       "difficulty": 2,
       "concepts": [
-        "counter math",
-        "DON!! distribution",
-        "Blockers"
+        "Double Attack timing",
+        "bait the Blocker",
+        "counter math"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Twenty Doctors can block. They can counter with Karoo (+1,000) and Twenty Doctors (+1,000). You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -8075,14 +8075,14 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Roronoa Zoro goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Roronoa Zoro goes to 6,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Roronoa Zoro goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Roronoa Zoro goes to 7,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +3,000 to stop it, and their hand only has +2,000."
         },
         {
           "action": {
@@ -8090,7 +8090,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Karoo (+1000), Twenty Doctors (+1000). An active Blocker can redirect this attack."
+          "why": "Your Leader Roronoa Zoro swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Twenty Doctors blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -8098,15 +8098,15 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Portgas.D.Ace: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Karoo (+1000), Twenty Doctors (+1000). No active Blocker can redirect this attack."
+          "why": "Portgas.D.Ace swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and DON!! distribution and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Roronoa Zoro",
-        "Attach 1 DON!! to Roronoa Zoro → Attach 1 DON!! to Roronoa Zoro → Attack Monkey.D.Luffy with Roronoa Zoro (7000 power) → Attack Monkey.D.Luffy with Portgas.D.Ace (7000 power)"
+        "Double Attack takes two Life at once, but a hit at 1 Life doesn't win. Which attack needs to land after they reach 0?",
+        "First move: 2 DON!! to Roronoa Zoro.",
+        "1. 2 DON!! to Roronoa Zoro  2. Roronoa Zoro attacks their Leader  3. Portgas.D.Ace attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Double Attack is two damage, but a Leader at 1 Life only loses that last card. Use it to get them to 0, then finish with a separate hit.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 189,
@@ -8120,10 +8120,12 @@
       "difficulty": 3,
       "concepts": [
         "Double Attack timing",
-        "Life to hand",
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
         "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 1 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Blueno can block. Their hand is empty. You have 2 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -8284,14 +8286,14 @@
               "m-0#1"
             ]
           },
-          "why": "Give 1 rested DON!! to Baron Tamago: +1000 power during your turn, without spending active DON!!. Use this once-per-turn ability before that card attacks."
+          "why": "Use Yamato's Leader ability: Baron Tamago gets 1 rested DON!! (+1,000) without touching your active DON!!. Free power comes first."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Charlotte Chiffon goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Charlotte Chiffon goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. Their hand is empty right now, though any Life card they take goes there."
         },
         {
           "action": {
@@ -8299,7 +8301,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Yamato: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Your Leader Yamato swings at their Leader Yamato, 5,000 into 5,000. Blueno blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -8307,7 +8309,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Baron Tamago: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Baron Tamago swings at their Leader Yamato, 7,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
         },
         {
           "action": {
@@ -8315,15 +8317,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Charlotte Chiffon: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Surume (+2000). No active Blocker can redirect this attack."
+          "why": "Charlotte Chiffon swings at their Leader Yamato, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Double Attack timing and Life to hand and DON!! distribution before committing DON!!.",
-        "Activate Yamato → Baron Tamago (1 rested DON!!)",
-        "Activate Yamato → Baron Tamago (1 rested DON!!) → Attach 1 DON!! to Charlotte Chiffon → Attack Yamato with Yamato (5000 power) → Attack Yamato with Baron Tamago (7000 power) → Attack Yamato with Charlotte Chiffon (7000 power)"
+        "Double Attack takes two Life at once, but a hit at 1 Life doesn't win. Which attack needs to land after they reach 0?",
+        "First move: Yamato's ability onto Baron Tamago.",
+        "1. Yamato's ability onto Baron Tamago  2. 1 DON!! to Charlotte Chiffon  3. Yamato attacks their Leader  4. Baron Tamago attacks their Leader  5. Charlotte Chiffon attacks their Leader"
       ],
-      "lesson": "Double Attack removes up to two Life, but damage taken at one Life does not win. Plan a later attack at zero Life and account for the counters that Life supplies.",
+      "lesson": "Double Attack is two damage, but a Leader at 1 Life only loses that last card. Use it to get them to 0, then finish with a separate hit.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1460,
@@ -8333,14 +8335,16 @@
     },
     {
       "id": "gen-0039",
-      "title": "Heat: counter math",
+      "title": "Heat: Double Attack timing",
       "difficulty": 2,
       "concepts": [
+        "Double Attack timing",
+        "Leader abilities",
+        "bait the Blocker",
         "counter math",
-        "DON!! distribution",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Ann can block. They can counter with Sheepshead (+1,000) and Roronoa Zoro (+1,000). You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -8509,7 +8513,7 @@
               "m-1#2"
             ]
           },
-          "why": "Give 2 rested DON!! to Heat: +2000 power during your turn, without spending active DON!!. Use this once-per-turn ability before that card attacks."
+          "why": "Use Yamato's Leader ability: Heat gets 2 rested DON!! (+2,000) without touching your active DON!!. Free power comes first."
         },
         {
           "action": {
@@ -8517,7 +8521,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Yamato: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Sheepshead (+1000), Roronoa Zoro (+1000). An active Blocker can redirect this attack."
+          "why": "Your Leader Yamato swings at their Leader Shanks, 5,000 into 5,000. They spend +1,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -8525,7 +8529,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Charlotte Chiffon: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Sheepshead (+1000). An active Blocker can redirect this attack."
+          "why": "Charlotte Chiffon swings at their Leader Shanks, 6,000 into 5,000. Ann blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -8533,15 +8537,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Heat: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Sheepshead (+1000). No active Blocker can redirect this attack."
+          "why": "Heat swings at their Leader Shanks, 6,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and DON!! distribution and Blockers before committing DON!!.",
-        "Activate Yamato → Heat (2 rested DON!!)",
-        "Activate Yamato → Heat (2 rested DON!!) → Attack Shanks with Yamato (5000 power) → Attack Shanks with Charlotte Chiffon (6000 power) → Attack Shanks with Heat (6000 power)"
+        "Double Attack takes two Life at once, but a hit at 1 Life doesn't win. Which attack needs to land after they reach 0?",
+        "First move: Yamato's ability onto Heat.",
+        "1. Yamato's ability onto Heat  2. Yamato attacks their Leader  3. Charlotte Chiffon attacks their Leader  4. Heat attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Double Attack is two damage, but a Leader at 1 Life only loses that last card. Use it to get them to 0, then finish with a separate hit.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 650,
@@ -8551,14 +8555,15 @@
     },
     {
       "id": "gen-0040",
-      "title": "Nico Robin: counter math",
+      "title": "Nico Robin: Leader abilities",
       "difficulty": 3,
       "concepts": [
+        "Leader abilities",
+        "bait the Blocker",
         "counter math",
-        "DON!! distribution",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Blueno can block. They can counter with Baron Tamago (+1,000) and Heat (+1,000). You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -8727,14 +8732,14 @@
               "m-L#1"
             ]
           },
-          "why": "Give 1 rested DON!! to Monkey.D.Luffy: +1000 power during your turn, without spending active DON!!. Use this once-per-turn ability before that card attacks."
+          "why": "Use Monkey.D.Luffy's Leader ability: Monkey.D.Luffy gets 1 rested DON!! (+1,000) without touching your active DON!!. Free power comes first."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Nico Robin goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Nico Robin goes to 6,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +2,000 to stop it."
         },
         {
           "action": {
@@ -8742,7 +8747,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Baron Tamago (+1000), Heat (+1000). An active Blocker can redirect this attack."
+          "why": "Roronoa Zoro swings at their Leader Yamato, 5,000 into 5,000. They spend +1,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -8750,7 +8755,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Baron Tamago (+1000). An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Yamato, 6,000 into 5,000. Blueno blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -8758,15 +8763,15 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Nico Robin: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Baron Tamago (+1000). No active Blocker can redirect this attack."
+          "why": "Nico Robin swings at their Leader Yamato, 6,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and DON!! distribution and Blockers before committing DON!!.",
-        "Activate Monkey.D.Luffy → Monkey.D.Luffy (1 rested DON!!)",
-        "Activate Monkey.D.Luffy → Monkey.D.Luffy (1 rested DON!!) → Attach 1 DON!! to Nico Robin → Attack Yamato with Roronoa Zoro (5000 power) → Attack Yamato with Monkey.D.Luffy (6000 power) → Attack Yamato with Nico Robin (6000 power)"
+        "Long-press your Leader, Monkey.D.Luffy, and read its ability. What does it buy you before your first attack?",
+        "First move: Monkey.D.Luffy's ability onto Monkey.D.Luffy.",
+        "1. Monkey.D.Luffy's ability onto Monkey.D.Luffy  2. 1 DON!! to Nico Robin  3. Roronoa Zoro attacks their Leader  4. Monkey.D.Luffy attacks their Leader  5. Nico Robin attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1043,
@@ -8780,10 +8785,12 @@
       "difficulty": 3,
       "concepts": [
         "Double Attack timing",
-        "Life to hand",
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
         "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 1 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Black Maria can block. Their hand is empty. You have 2 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -8944,14 +8951,14 @@
               "m-0#1"
             ]
           },
-          "why": "Give 1 rested DON!! to X.Drake: +1000 power during your turn, without spending active DON!!. Use this once-per-turn ability before that card attacks."
+          "why": "Use Yamato's Leader ability: X.Drake gets 1 rested DON!! (+1,000) without touching your active DON!!. Free power comes first."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Baron Tamago goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Baron Tamago goes to 7,000 against their Leader Kaido (5,000). Ties go to the attacker. Their hand is empty right now, though any Life card they take goes there."
         },
         {
           "action": {
@@ -8959,7 +8966,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Yamato: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Your Leader Yamato swings at their Leader Kaido, 5,000 into 5,000. Black Maria blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -8967,7 +8974,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "X.Drake: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "X.Drake swings at their Leader Kaido, 7,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
         },
         {
           "action": {
@@ -8975,15 +8982,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Baron Tamago: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Viola (+2000). No active Blocker can redirect this attack."
+          "why": "Baron Tamago swings at their Leader Kaido, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Double Attack timing and Life to hand and DON!! distribution before committing DON!!.",
-        "Activate Yamato → X.Drake (1 rested DON!!)",
-        "Activate Yamato → X.Drake (1 rested DON!!) → Attach 1 DON!! to Baron Tamago → Attack Kaido with Yamato (5000 power) → Attack Kaido with X.Drake (7000 power) → Attack Kaido with Baron Tamago (7000 power)"
+        "Double Attack takes two Life at once, but a hit at 1 Life doesn't win. Which attack needs to land after they reach 0?",
+        "First move: Yamato's ability onto X.Drake.",
+        "1. Yamato's ability onto X.Drake  2. 1 DON!! to Baron Tamago  3. Yamato attacks their Leader  4. X.Drake attacks their Leader  5. Baron Tamago attacks their Leader"
       ],
-      "lesson": "Double Attack removes up to two Life, but damage taken at one Life does not win. Plan a later attack at zero Life and account for the counters that Life supplies.",
+      "lesson": "Double Attack is two damage, but a Leader at 1 Life only loses that last card. Use it to get them to 0, then finish with a separate hit.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1460,
@@ -8997,10 +9004,12 @@
       "difficulty": 3,
       "concepts": [
         "Double Attack timing",
-        "Life to hand",
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
         "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 1 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Tsuru can block. Their hand is empty. You have 2 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -9161,14 +9170,14 @@
               "m-1#2"
             ]
           },
-          "why": "Give 2 rested DON!! to Heat: +2000 power during your turn, without spending active DON!!. Use this once-per-turn ability before that card attacks."
+          "why": "Use Yamato's Leader ability: Heat gets 2 rested DON!! (+2,000) without touching your active DON!!. Free power comes first."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Yamato goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Yamato goes to 6,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. Their hand is empty right now, though any Life card they take goes there."
         },
         {
           "action": {
@@ -9176,7 +9185,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Vito: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Vito swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. Tsuru blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -9184,7 +9193,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Yamato: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Your Leader Yamato swings at their Leader Monkey.D.Luffy, 6,000 into 5,000. Double Attack would deal 2, but they only had 1 Life card, so this can't be the winning hit. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
         },
         {
           "action": {
@@ -9192,15 +9201,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Heat: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Momonga (+1000). No active Blocker can redirect this attack."
+          "why": "Heat swings at their Leader Monkey.D.Luffy, 6,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Double Attack timing and Life to hand and DON!! distribution before committing DON!!.",
-        "Activate Yamato → Heat (2 rested DON!!)",
-        "Activate Yamato → Heat (2 rested DON!!) → Attach 1 DON!! to Yamato → Attack Monkey.D.Luffy with Vito (5000 power) → Attack Monkey.D.Luffy with Yamato (6000 power) → Attack Monkey.D.Luffy with Heat (6000 power)"
+        "Double Attack takes two Life at once, but a hit at 1 Life doesn't win. Which attack needs to land after they reach 0?",
+        "First move: Yamato's ability onto Heat.",
+        "1. Yamato's ability onto Heat  2. 1 DON!! to Yamato  3. Vito attacks their Leader  4. Yamato attacks their Leader  5. Heat attacks their Leader"
       ],
-      "lesson": "Double Attack removes up to two Life, but damage taken at one Life does not win. Plan a later attack at zero Life and account for the counters that Life supplies.",
+      "lesson": "Double Attack is two damage, but a Leader at 1 Life only loses that last card. Use it to get them to 0, then finish with a separate hit.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 2683,
@@ -9214,10 +9223,12 @@
       "difficulty": 3,
       "concepts": [
         "Double Attack timing",
-        "Life to hand",
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
         "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 1 Life, 1 Blocker(s), and 0 hand card(s).",
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Trafalgar Law can block. Their hand is empty. You have 2 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -9378,14 +9389,14 @@
               "m-0#2"
             ]
           },
-          "why": "Give 2 rested DON!! to Vito: +2000 power during your turn, without spending active DON!!. Use this once-per-turn ability before that card attacks."
+          "why": "Use Yamato's Leader ability: Vito gets 2 rested DON!! (+2,000) without touching your active DON!!. Free power comes first."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-1"
           },
-          "why": "Baron Tamago goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Baron Tamago goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. Their hand is empty right now, though any Life card they take goes there."
         },
         {
           "action": {
@@ -9393,7 +9404,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Yamato: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. An active Blocker can redirect this attack."
+          "why": "Your Leader Yamato swings at their Leader Yamato, 5,000 into 5,000. Trafalgar Law blocks. That was their last Blocker, so the next attack can't be redirected. Trafalgar Law survives, but it's rested now and can't block again."
         },
         {
           "action": {
@@ -9401,7 +9412,7 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Vito: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit takes Life into their hand unless Banish applies. Their hand has no payable counters. No active Blocker can redirect this attack."
+          "why": "Vito swings at their Leader Yamato, 7,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
         },
         {
           "action": {
@@ -9409,15 +9420,15 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "Baron Tamago: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Mamboshi (+2000). No active Blocker can redirect this attack."
+          "why": "Baron Tamago swings at their Leader Yamato, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about Double Attack timing and Life to hand and DON!! distribution before committing DON!!.",
-        "Activate Yamato → Vito (2 rested DON!!)",
-        "Activate Yamato → Vito (2 rested DON!!) → Attach 1 DON!! to Baron Tamago → Attack Yamato with Yamato (5000 power) → Attack Yamato with Vito (7000 power) → Attack Yamato with Baron Tamago (7000 power)"
+        "Double Attack takes two Life at once, but a hit at 1 Life doesn't win. Which attack needs to land after they reach 0?",
+        "First move: Yamato's ability onto Vito.",
+        "1. Yamato's ability onto Vito  2. 1 DON!! to Baron Tamago  3. Yamato attacks their Leader  4. Vito attacks their Leader  5. Baron Tamago attacks their Leader"
       ],
-      "lesson": "Double Attack removes up to two Life, but damage taken at one Life does not win. Plan a later attack at zero Life and account for the counters that Life supplies.",
+      "lesson": "Double Attack is two damage, but a Leader at 1 Life only loses that last card. Use it to get them to 0, then finish with a separate hit.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 2147,
@@ -9427,14 +9438,15 @@
     },
     {
       "id": "gen-0044",
-      "title": "Roronoa Zoro: counter math",
+      "title": "Roronoa Zoro: Leader abilities",
       "difficulty": 3,
       "concepts": [
+        "Leader abilities",
+        "bait the Blocker",
         "counter math",
-        "DON!! distribution",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Black Maria can block. They can counter with Sheepshead (+1,000) and Roronoa Zoro (+1,000). You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -9603,21 +9615,21 @@
               "m-L#1"
             ]
           },
-          "why": "Give 1 rested DON!! to Monkey.D.Luffy: +1000 power during your turn, without spending active DON!!. Use this once-per-turn ability before that card attacks."
+          "why": "Use Monkey.D.Luffy's Leader ability: Monkey.D.Luffy gets 1 rested DON!! (+1,000) without touching your active DON!!. Free power comes first."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 6000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 7,000 against their Leader Shanks (5,000). Ties go to the attacker. They'd need +3,000 to stop it, and their hand only has +2,000."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "Roronoa Zoro goes from 5000 to 7000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Roronoa Zoro goes to 7,000 against their Leader Shanks (5,000). Ties go to the attacker. They'd need +3,000 to stop it, and their hand only has +2,000."
         },
         {
           "action": {
@@ -9625,7 +9637,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Sheepshead (+1000), Roronoa Zoro (+1000). An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Shanks, 7,000 into 5,000. Black Maria blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -9633,15 +9645,15 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "Roronoa Zoro: 7000 into 5000 needs at least +3000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Sheepshead (+1000), Roronoa Zoro (+1000). No active Blocker can redirect this attack."
+          "why": "Roronoa Zoro swings at their Leader Shanks, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and DON!! distribution and Blockers before committing DON!!.",
-        "Activate Monkey.D.Luffy → Monkey.D.Luffy (1 rested DON!!)",
-        "Activate Monkey.D.Luffy → Monkey.D.Luffy (1 rested DON!!) → Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to Roronoa Zoro → Attack Shanks with Monkey.D.Luffy (7000 power) → Attack Shanks with Roronoa Zoro (7000 power)"
+        "Long-press your Leader, Monkey.D.Luffy, and read its ability. What does it buy you before your first attack?",
+        "First move: Monkey.D.Luffy's ability onto Monkey.D.Luffy.",
+        "1. Monkey.D.Luffy's ability onto Monkey.D.Luffy  2. 1 DON!! to Monkey.D.Luffy  3. 1 DON!! to Roronoa Zoro  4. Monkey.D.Luffy attacks their Leader  5. Roronoa Zoro attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 1098,
@@ -9651,14 +9663,14 @@
     },
     {
       "id": "gen-0045",
-      "title": "T-Bone: counter math",
+      "title": "T-Bone: bait the Blocker",
       "difficulty": 3,
       "concepts": [
+        "bait the Blocker",
         "counter math",
-        "DON!! distribution",
-        "Blockers"
+        "DON!! distribution"
       ],
-      "intro": "Win this Main Phase against every legal defense. They have 0 Life, 1 Blocker(s), and 2 hand card(s).",
+      "intro": "Their Leader is at 0 Life: one clean hit wins. Brook can block. They can counter with Charlotte Flampe (+1,000) and Charlotte Flampe (+1,000). You have 3 active DON!!. Find the line that wins against any defense.",
       "state": {
         "me": {
           "leader": {
@@ -9824,14 +9836,14 @@
             "type": "attachDon",
             "target": "m-L"
           },
-          "why": "Monkey.D.Luffy goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "Your Leader Monkey.D.Luffy goes to 6,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +2,000 to stop it."
         },
         {
           "action": {
             "type": "attachDon",
             "target": "m-0"
           },
-          "why": "T-Bone goes from 5000 to 6000 power, including printed conditional buffs. Spread DON!! when one large attack can be absorbed by a Blocker."
+          "why": "T-Bone (slot 1) goes to 6,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +2,000 to stop it."
         },
         {
           "action": {
@@ -9839,7 +9851,7 @@
             "attacker": "m-1",
             "target": "o-L"
           },
-          "why": "T-Bone: 5000 into 5000 needs at least +1000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Charlotte Flampe (+1000), Charlotte Flampe (+1000). An active Blocker can redirect this attack."
+          "why": "T-Bone (slot 2) swings at their Leader Yamato, 5,000 into 5,000. They spend +1,000 in counters to stop it. Those cards are gone for the attacks that matter."
         },
         {
           "action": {
@@ -9847,7 +9859,7 @@
             "attacker": "m-L",
             "target": "o-L"
           },
-          "why": "Monkey.D.Luffy: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Charlotte Flampe (+1000). An active Blocker can redirect this attack."
+          "why": "Your Leader Monkey.D.Luffy swings at their Leader Yamato, 6,000 into 5,000. Brook blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
         },
         {
           "action": {
@@ -9855,15 +9867,15 @@
             "attacker": "m-0",
             "target": "o-L"
           },
-          "why": "T-Bone: 6000 into 5000 needs at least +2000 counter power to stop a hit. A Leader hit now wins at 0 Life. Their available hand counters are Charlotte Flampe (+1000). No active Blocker can redirect this attack."
+          "why": "T-Bone (slot 1) swings at their Leader Yamato, 6,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
         }
       ],
       "hints": [
-        "Think about counter math and DON!! distribution and Blockers before committing DON!!.",
-        "Attach 1 DON!! to Monkey.D.Luffy",
-        "Attach 1 DON!! to Monkey.D.Luffy → Attach 1 DON!! to T-Bone → Attack Yamato with T-Bone (5000 power) → Attack Yamato with Monkey.D.Luffy (6000 power) → Attack Yamato with T-Bone (6000 power)"
+        "Brook can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 1 DON!! to Monkey.D.Luffy.",
+        "1. 1 DON!! to Monkey.D.Luffy  2. 1 DON!! to T-Bone (slot 1)  3. T-Bone (slot 2) attacks their Leader  4. Monkey.D.Luffy attacks their Leader  5. T-Bone (slot 1) attacks their Leader"
       ],
-      "lesson": "A Blocker can absorb one large attack. Allocate power across the attacks that must get through, and remember that equality still hits.",
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
       "verified": {
         "solverVersion": "optcg-main-1.0.0",
         "nodes": 446,
@@ -9873,138 +9885,6 @@
     }
   ],
   "packs": [
-    {
-      "id": "pack-1",
-      "title": "Blockers",
-      "puzzleIds": [
-        "gen-0001",
-        "gen-0002",
-        "gen-0004",
-        "gen-0005",
-        "gen-0006",
-        "gen-0007",
-        "gen-0008",
-        "gen-0011",
-        "gen-0012",
-        "gen-0013",
-        "gen-0014",
-        "gen-0015",
-        "gen-0016",
-        "gen-0017",
-        "gen-0018",
-        "gen-0019",
-        "gen-0020",
-        "gen-0021",
-        "gen-0023",
-        "gen-0024",
-        "gen-0026",
-        "gen-0027",
-        "gen-0028",
-        "gen-0029",
-        "gen-0030",
-        "gen-0031",
-        "gen-0032",
-        "gen-0033",
-        "gen-0034",
-        "gen-0035",
-        "gen-0036",
-        "gen-0037",
-        "gen-0039",
-        "gen-0040",
-        "gen-0044",
-        "gen-0045"
-      ]
-    },
-    {
-      "id": "pack-2",
-      "title": "counter math",
-      "puzzleIds": [
-        "gen-0004",
-        "gen-0005",
-        "gen-0011",
-        "gen-0012",
-        "gen-0013",
-        "gen-0014",
-        "gen-0016",
-        "gen-0017",
-        "gen-0020",
-        "gen-0021",
-        "gen-0023",
-        "gen-0024",
-        "gen-0026",
-        "gen-0027",
-        "gen-0028",
-        "gen-0029",
-        "gen-0030",
-        "gen-0032",
-        "gen-0033",
-        "gen-0034",
-        "gen-0035",
-        "gen-0037",
-        "gen-0039",
-        "gen-0040",
-        "gen-0044",
-        "gen-0045"
-      ]
-    },
-    {
-      "id": "pack-3",
-      "title": "DON!! distribution",
-      "puzzleIds": [
-        "gen-0001",
-        "gen-0006",
-        "gen-0010",
-        "gen-0014",
-        "gen-0018",
-        "gen-0022",
-        "gen-0025",
-        "gen-0028",
-        "gen-0031",
-        "gen-0034",
-        "gen-0036",
-        "gen-0037",
-        "gen-0038",
-        "gen-0039",
-        "gen-0040",
-        "gen-0041",
-        "gen-0042",
-        "gen-0043",
-        "gen-0044",
-        "gen-0045"
-      ]
-    },
-    {
-      "id": "pack-4",
-      "title": "Rush & removal",
-      "puzzleIds": [
-        "gen-0002",
-        "gen-0007",
-        "gen-0008",
-        "gen-0015",
-        "gen-0019"
-      ]
-    },
-    {
-      "id": "pack-5",
-      "title": "Triggers & Banish",
-      "puzzleIds": [
-        "gen-0003",
-        "gen-0009"
-      ]
-    },
-    {
-      "id": "pack-6",
-      "title": "Double Attack timing",
-      "puzzleIds": [
-        "gen-0010",
-        "gen-0022",
-        "gen-0025",
-        "gen-0038",
-        "gen-0041",
-        "gen-0042",
-        "gen-0043"
-      ]
-    },
     {
       "id": "starter",
       "title": "Starter lessons",
@@ -10018,6 +9898,181 @@
         "gen-0011",
         "gen-0015",
         "gen-0019"
+      ]
+    },
+    {
+      "id": "pack-leader-abilities",
+      "title": "Leader abilities",
+      "puzzleIds": [
+        "gen-0001",
+        "gen-0010",
+        "gen-0011",
+        "gen-0022",
+        "gen-0025",
+        "gen-0028",
+        "gen-0038",
+        "gen-0039",
+        "gen-0040",
+        "gen-0041",
+        "gen-0042",
+        "gen-0043",
+        "gen-0044"
+      ]
+    },
+    {
+      "id": "pack-bait-the-blocker",
+      "title": "Bait the Blocker",
+      "puzzleIds": [
+        "gen-0001",
+        "gen-0004",
+        "gen-0005",
+        "gen-0006",
+        "gen-0007",
+        "gen-0010",
+        "gen-0012",
+        "gen-0013",
+        "gen-0014",
+        "gen-0015",
+        "gen-0016",
+        "gen-0017",
+        "gen-0018",
+        "gen-0019",
+        "gen-0020",
+        "gen-0021",
+        "gen-0022",
+        "gen-0023",
+        "gen-0024",
+        "gen-0025",
+        "gen-0026",
+        "gen-0027",
+        "gen-0029",
+        "gen-0030",
+        "gen-0031",
+        "gen-0032",
+        "gen-0033",
+        "gen-0034",
+        "gen-0035",
+        "gen-0036",
+        "gen-0037",
+        "gen-0038",
+        "gen-0039",
+        "gen-0040",
+        "gen-0041",
+        "gen-0042",
+        "gen-0043",
+        "gen-0044",
+        "gen-0045"
+      ]
+    },
+    {
+      "id": "pack-don-distribution",
+      "title": "DON!! distribution",
+      "puzzleIds": [
+        "gen-0001",
+        "gen-0004",
+        "gen-0005",
+        "gen-0010",
+        "gen-0012",
+        "gen-0013",
+        "gen-0016",
+        "gen-0017",
+        "gen-0020",
+        "gen-0021",
+        "gen-0022",
+        "gen-0023",
+        "gen-0024",
+        "gen-0025",
+        "gen-0026",
+        "gen-0027",
+        "gen-0029",
+        "gen-0030",
+        "gen-0032",
+        "gen-0033",
+        "gen-0035",
+        "gen-0038",
+        "gen-0039",
+        "gen-0040",
+        "gen-0041",
+        "gen-0042",
+        "gen-0043",
+        "gen-0044",
+        "gen-0045"
+      ]
+    },
+    {
+      "id": "pack-rush-removal",
+      "title": "Rush & removal",
+      "puzzleIds": [
+        "gen-0002",
+        "gen-0007",
+        "gen-0008",
+        "gen-0015",
+        "gen-0019"
+      ]
+    },
+    {
+      "id": "pack-blockers",
+      "title": "Blockers",
+      "puzzleIds": [
+        "gen-0002",
+        "gen-0008",
+        "gen-0028"
+      ]
+    },
+    {
+      "id": "pack-counter-math",
+      "title": "Counter math",
+      "puzzleIds": [
+        "gen-0003",
+        "gen-0004",
+        "gen-0005",
+        "gen-0009",
+        "gen-0010",
+        "gen-0011",
+        "gen-0012",
+        "gen-0013",
+        "gen-0014",
+        "gen-0016",
+        "gen-0017",
+        "gen-0020",
+        "gen-0021",
+        "gen-0022",
+        "gen-0023",
+        "gen-0024",
+        "gen-0025",
+        "gen-0026",
+        "gen-0027",
+        "gen-0028",
+        "gen-0029",
+        "gen-0030",
+        "gen-0032",
+        "gen-0033",
+        "gen-0034",
+        "gen-0035",
+        "gen-0037",
+        "gen-0038",
+        "gen-0039",
+        "gen-0040",
+        "gen-0041",
+        "gen-0042",
+        "gen-0043",
+        "gen-0044",
+        "gen-0045"
+      ]
+    },
+    {
+      "id": "pack-double-attack-timing",
+      "title": "Double Attack timing",
+      "puzzleIds": [
+        "gen-0010",
+        "gen-0022",
+        "gen-0025",
+        "gen-0037",
+        "gen-0038",
+        "gen-0039",
+        "gen-0041",
+        "gen-0042",
+        "gen-0043"
       ]
     }
   ],
