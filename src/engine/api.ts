@@ -136,5 +136,5 @@ export interface PuzzleSet {
   generatedAt: string;
   puzzles: Puzzle[];
   packs: { id: string; title: string; puzzleIds: string[] }[];
-  dailyOrder: string[];   // puzzle ids; daily index = days since 2026-10-01 mod length
+  dailyOrder: string[];   // puzzle ids; daily index = days since 2026-09-30 (local date) mod length
 }

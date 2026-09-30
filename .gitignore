@@ -3,3 +3,5 @@ dist
 data/pr
 .work/
 .claude/
+reports/e2e/
+reports/layout/
