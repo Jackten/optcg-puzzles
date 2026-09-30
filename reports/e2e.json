@@ -1,9 +1,9 @@
 {
-  "at": "2026-09-30T20:58:48.142Z",
+  "at": "2026-09-30T23:11:33.724Z",
   "base": "http://127.0.0.1:5199/",
   "viewport": "844x390",
-  "total": 45,
-  "passed": 45,
+  "total": 57,
+  "passed": 57,
   "results": [
     {
       "id": "gen-0001",
@@ -317,6 +317,90 @@
       "id": "gen-0045",
       "difficulty": 3,
       "steps": 5,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-001",
+      "difficulty": 5,
+      "steps": 8,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-002",
+      "difficulty": 5,
+      "steps": 8,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-003",
+      "difficulty": 5,
+      "steps": 8,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-004",
+      "difficulty": 5,
+      "steps": 8,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-005",
+      "difficulty": 5,
+      "steps": 8,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-006",
+      "difficulty": 5,
+      "steps": 8,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-007",
+      "difficulty": 5,
+      "steps": 8,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-008",
+      "difficulty": 5,
+      "steps": 9,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-009",
+      "difficulty": 5,
+      "steps": 9,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-010",
+      "difficulty": 5,
+      "steps": 9,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-011",
+      "difficulty": 5,
+      "steps": 9,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "hard-012",
+      "difficulty": 5,
+      "steps": 10,
       "ok": true,
       "errors": []
     }
