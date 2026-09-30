@@ -1,0 +1,933 @@
+[
+  {
+    "id": "EB01-017",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  },
+  {
+    "id": "EB01-049",
+    "effect": "[On Play] K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+    "trigger": null,
+    "rule": {
+      "onPlay": {
+        "effects": [
+          {
+            "kind": "ko",
+            "select": {
+              "side": "enemy",
+              "zone": "characters",
+              "maxCost": 2
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "EB03-002",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "EB03-030",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "EB03-040",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "OP01-001",
+    "effect": "[DON!! x1] [Your Turn] All of your Characters gain +1000 power.",
+    "trigger": null,
+    "rule": {
+      "static": "zoroLeader"
+    }
+  },
+  {
+    "id": "OP01-006",
+    "effect": "[On Play] Give up to 1 of your opponent's Characters −2000 power during this turn.",
+    "trigger": null,
+    "rule": {
+      "onPlay": {
+        "effects": [
+          {
+            "kind": "power",
+            "amount": -2000,
+            "select": {
+              "side": "enemy",
+              "zone": "characters"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "OP01-025",
+    "effect": "[Rush] (This card can attack on the turn in which it is played.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "rush": true
+      }
+    }
+  },
+  {
+    "id": "OP01-027",
+    "effect": "[Main] Give up to 1 of your opponent's Characters −10000 power during this turn.",
+    "trigger": null,
+    "rule": {
+      "main": {
+        "effects": [
+          {
+            "kind": "power",
+            "amount": -10000,
+            "select": {
+              "side": "enemy",
+              "zone": "characters"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "OP01-029",
+    "effect": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, if you have 2 or less Life cards, that card gains an additional +2000 power.",
+    "trigger": "[Trigger] Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+    "rule": {
+      "counter": 2000,
+      "counterLowLife": 2000,
+      "trigger": {
+        "effects": [
+          {
+            "kind": "power",
+            "amount": 1000,
+            "select": {
+              "side": "self",
+              "zone": "field"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "OP01-033",
+    "effect": "[On Play] Rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "trigger": null,
+    "rule": {
+      "onPlay": {
+        "effects": [
+          {
+            "kind": "rest",
+            "select": {
+              "side": "enemy",
+              "zone": "characters",
+              "maxCost": 4
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "OP01-048",
+    "effect": "[On Play] Rest up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "trigger": null,
+    "rule": {
+      "onPlay": {
+        "effects": [
+          {
+            "kind": "rest",
+            "select": {
+              "side": "enemy",
+              "zone": "characters",
+              "maxCost": 3
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "OP01-054",
+    "effect": "[On Play] K.O. up to 1 of your opponent's rested Characters with a cost of 4 or less.",
+    "trigger": null,
+    "rule": {
+      "onPlay": {
+        "effects": [
+          {
+            "kind": "ko",
+            "select": {
+              "side": "enemy",
+              "zone": "characters",
+              "maxCost": 4,
+              "rested": true
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "OP04-014",
+    "effect": "[Banish] (When this card deals damage, the target card is trashed without activating its Trigger.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "banish": true
+      }
+    }
+  },
+  {
+    "id": "OP06-022",
+    "effect": "[Double Attack] (This card deals 2 damage.) [Activate: Main] [Once Per Turn] If your opponent has 3 or less Life cards, give up to 2 rested DON!! cards to 1 of your Characters.",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "doubleAttack": true
+      },
+      "activate": {
+        "once": true,
+        "lifeMax": 3,
+        "effects": [
+          {
+            "kind": "attachRested",
+            "amount": 2,
+            "select": {
+              "side": "self"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "OP06-087",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  },
+  {
+    "id": "OP08-003",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  },
+  {
+    "id": "OP10-094",
+    "effect": "[DON!! x1] This Character gains [Double Attack].",
+    "trigger": null,
+    "rule": {
+      "static": "donDouble",
+      "donMin": 1
+    }
+  },
+  {
+    "id": "OP11-003",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "OP11-032",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "OP11-033",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "OP11-045",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "OP11-053",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "OP11-068",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "OP11-087",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "OP11-105",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "OP11-111",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "OP12-050",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  },
+  {
+    "id": "OP12-106",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  },
+  {
+    "id": "OP13-020",
+    "effect": "[Main] Give up to 1 of your opponent's Characters −5000 power during this turn.",
+    "trigger": "[Trigger] Activate this card's [Main] effect.",
+    "rule": {
+      "main": {
+        "effects": [
+          {
+            "kind": "power",
+            "amount": -5000,
+            "select": {
+              "side": "enemy",
+              "zone": "characters"
+            }
+          }
+        ]
+      },
+      "trigger": {
+        "effects": [
+          {
+            "kind": "power",
+            "amount": -5000,
+            "select": {
+              "side": "enemy",
+              "zone": "characters"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "OP13-022",
+    "effect": "[Activate: Main] You may rest this Stage: Up to 1 of your Characters with 2000 base power or less gains +1000 power during this turn.",
+    "trigger": null,
+    "rule": {
+      "activate": {
+        "restSelf": true,
+        "effects": [
+          {
+            "kind": "power",
+            "amount": 1000,
+            "select": {
+              "side": "self",
+              "baseMax": 2000
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "OP17-079",
+    "effect": "All of your Characters with a cost of 12 or more gain [Blocker]. (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "static": "bigBlockers"
+    }
+  },
+  {
+    "id": "P-003",
+    "effect": "[DON!! x2] This Character gains [Double Attack]. (This card deals 2 damage.)",
+    "trigger": null,
+    "rule": {
+      "static": "donDouble",
+      "donMin": 2
+    }
+  },
+  {
+    "id": "P-006",
+    "effect": "[DON!! x2] [Your Turn] This Character gains +2000 power.",
+    "trigger": null,
+    "rule": {
+      "static": "donPower",
+      "donMin": 2,
+      "buff": 2000
+    }
+  },
+  {
+    "id": "P-028",
+    "effect": "[Double Attack] (This card deals 2 damage.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "doubleAttack": true
+      }
+    }
+  },
+  {
+    "id": "P-045",
+    "effect": "[Banish] (When this card deals damage, the target card is trashed without activating its Trigger.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "banish": true
+      }
+    }
+  },
+  {
+    "id": "ST01-001",
+    "effect": "[Activate: Main] [Once Per Turn] Give this Leader or 1 of your Characters up to 1 rested DON!! card.",
+    "trigger": null,
+    "rule": {
+      "activate": {
+        "once": true,
+        "effects": [
+          {
+            "kind": "attachRested",
+            "amount": 1,
+            "select": {
+              "side": "self",
+              "zone": "field"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST01-003",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST01-004",
+    "effect": "[DON!! x2] This Character gains [Rush]. (This card can attack on the turn in which it is played.)",
+    "trigger": null,
+    "rule": {
+      "static": "donRush",
+      "donMin": 2
+    }
+  },
+  {
+    "id": "ST01-006",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  },
+  {
+    "id": "ST01-008",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST01-009",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST01-012",
+    "effect": "[Rush] (This card can attack on the turn in which it is played.) [DON!! x2] [When Attacking] Your opponent cannot activate [Blocker] during this battle.",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "rush": true
+      },
+      "unblockableDon": 2
+    }
+  },
+  {
+    "id": "ST01-013",
+    "effect": "[DON!! x1] This Character gains +1000 power.",
+    "trigger": null,
+    "rule": {
+      "static": "donPower",
+      "donMin": 1,
+      "buff": 1000
+    }
+  },
+  {
+    "id": "ST01-014",
+    "effect": "[Counter] Up to 1 of your Leader or Character cards gains +3000 power during this battle.",
+    "trigger": "[Trigger] Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+    "rule": {
+      "counter": 3000,
+      "trigger": {
+        "effects": [
+          {
+            "kind": "power",
+            "amount": 1000,
+            "select": {
+              "side": "self",
+              "zone": "field"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST01-015",
+    "effect": "[Main] K.O. up to 1 of your opponent's Characters with 6000 power or less.",
+    "trigger": "[Trigger] Activate this card's [Main] effect.",
+    "rule": {
+      "main": {
+        "effects": [
+          {
+            "kind": "ko",
+            "select": {
+              "side": "enemy",
+              "zone": "characters",
+              "maxPower": 6000
+            }
+          }
+        ]
+      },
+      "trigger": {
+        "effects": [
+          {
+            "kind": "ko",
+            "select": {
+              "side": "enemy",
+              "zone": "characters",
+              "maxPower": 6000
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST01-017",
+    "effect": "[Activate: Main] You may rest this Stage: Up to 1 {Straw Hat Crew} type Leader or Character card on your field gains +1000 power during this turn.",
+    "trigger": null,
+    "rule": {
+      "activate": {
+        "restSelf": true,
+        "effects": [
+          {
+            "kind": "power",
+            "amount": 1000,
+            "select": {
+              "side": "self",
+              "zone": "field",
+              "type": "Straw Hat Crew"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST02-002",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST02-004",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  },
+  {
+    "id": "ST02-006",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST02-011",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST02-016",
+    "effect": "[Counter] Up to 1 of your Leader or Character cards gains +4000 power during this battle. Then, set up to 1 of your DON!! cards as active.",
+    "trigger": null,
+    "rule": {
+      "counter": 4000,
+      "counterReady": 1
+    }
+  },
+  {
+    "id": "ST03-001",
+    "effect": "[Activate: Main] [Once Per Turn] DON!! −4 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Return up to 1 Character with a cost of 5 or less to the owner's hand.",
+    "trigger": null,
+    "rule": {
+      "activate": {
+        "once": true,
+        "returnDon": 4,
+        "effects": [
+          {
+            "kind": "bounce",
+            "select": {
+              "side": "both",
+              "maxCost": 5
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST03-002",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST03-006",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST03-008",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  },
+  {
+    "id": "ST03-009",
+    "effect": "[On Play] Return up to 1 Character with a cost of 7 or less to the owner's hand.",
+    "trigger": null,
+    "rule": {
+      "onPlay": {
+        "effects": [
+          {
+            "kind": "bounce",
+            "select": {
+              "side": "both",
+              "maxCost": 7
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST03-011",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST03-014",
+    "effect": "[On Play] Return up to 1 Character with a cost of 3 or less to the owner's hand.",
+    "trigger": null,
+    "rule": {
+      "onPlay": {
+        "effects": [
+          {
+            "kind": "bounce",
+            "select": {
+              "side": "both",
+              "maxCost": 3
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST03-015",
+    "effect": "[Main] Return up to 1 Character with a cost of 7 or less to the owner's hand.",
+    "trigger": "[Trigger] Activate this card's [Main] effect.",
+    "rule": {
+      "main": {
+        "effects": [
+          {
+            "kind": "bounce",
+            "select": {
+              "side": "both",
+              "maxCost": 7
+            }
+          }
+        ]
+      },
+      "trigger": {
+        "effects": [
+          {
+            "kind": "bounce",
+            "select": {
+              "side": "both",
+              "maxCost": 7
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST04-001",
+    "effect": "[Activate: Main] [Once Per Turn] DON!! −7 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Trash up to 1 of your opponent's Life cards.",
+    "trigger": null,
+    "rule": {
+      "activate": {
+        "once": true,
+        "returnDon": 7,
+        "effects": [
+          {
+            "kind": "trashLife"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST04-007",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST04-009",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST04-011",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  },
+  {
+    "id": "ST04-012",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST04-017",
+    "effect": "[Activate: Main] You may rest this Stage: If your Leader has the {Animal Kingdom Pirates} type, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "trigger": null,
+    "rule": {
+      "activate": {
+        "restSelf": true,
+        "leaderType": "Animal Kingdom Pirates",
+        "effects": [
+          {
+            "kind": "addDon",
+            "amount": 1,
+            "rested": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST05-001",
+    "effect": "[Activate: Main] [Once Per Turn] DON!! −3 (You may return the specified number of DON!! cards from your field to your DON!! deck.): All of your {FILM} type Characters gain +2000 power during this turn.",
+    "trigger": null,
+    "rule": {
+      "activate": {
+        "once": true,
+        "returnDon": 3,
+        "effects": [
+          {
+            "kind": "filmBuff",
+            "amount": 2000
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST05-002",
+    "effect": "[On Play] Add up to 1 DON!! card from your DON!! deck and rest it.",
+    "trigger": null,
+    "rule": {
+      "onPlay": {
+        "effects": [
+          {
+            "kind": "addDon",
+            "rested": true,
+            "amount": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST05-003",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  },
+  {
+    "id": "ST06-003",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST06-007",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  },
+  {
+    "id": "ST06-009",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST06-011",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST07-002",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST07-006",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST07-012",
+    "effect": "-",
+    "trigger": null,
+    "rule": {}
+  },
+  {
+    "id": "ST08-015",
+    "effect": "[Main] K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+    "trigger": "[Trigger] Draw 1 card.",
+    "rule": {
+      "main": {
+        "effects": [
+          {
+            "kind": "ko",
+            "select": {
+              "side": "enemy",
+              "zone": "characters",
+              "maxCost": 2
+            }
+          }
+        ]
+      },
+      "trigger": {
+        "effects": [
+          {
+            "kind": "draw",
+            "amount": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST09-001",
+    "effect": "[DON!! x1] [Opponent's Turn] If you have 2 or less Life cards, this Leader gains +1000 power.",
+    "trigger": null,
+    "rule": {
+      "static": "yamatoLeader"
+    }
+  },
+  {
+    "id": "ST16-004",
+    "effect": "[On Play] K.O. up to 1 of your opponent's rested Characters.",
+    "trigger": null,
+    "rule": {
+      "onPlay": {
+        "effects": [
+          {
+            "kind": "ko",
+            "select": {
+              "side": "enemy",
+              "zone": "characters",
+              "rested": true
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ST29-011",
+    "effect": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "trigger": null,
+    "rule": {
+      "keywords": {
+        "blocker": true
+      }
+    }
+  }
+]

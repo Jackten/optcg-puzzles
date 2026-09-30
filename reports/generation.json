@@ -1,0 +1,17 @@
+{
+  "seed": 20261001,
+  "attempts": 389,
+  "rejections": {
+    "greedy": 60,
+    "search": 26,
+    "fixedLine": 8
+  },
+  "hidden": 15,
+  "histogram": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 9
+  }
+}

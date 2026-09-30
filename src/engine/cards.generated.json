@@ -1,0 +1,1831 @@
+[
+  {
+    "id": "EB01-017",
+    "name": "Blueno",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "FILM",
+      "CP0"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/EB01-017.png"
+  },
+  {
+    "id": "EB01-049",
+    "name": "T-Bone",
+    "category": "Character",
+    "colors": [
+      "Black"
+    ],
+    "cost": 5,
+    "power": 5000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Water Seven",
+      "Navy"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[On Play] K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/EB01-049.png"
+  },
+  {
+    "id": "EB03-002",
+    "name": "Ain",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "FILM",
+      "Neo Navy"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/EB03-002.png"
+  },
+  {
+    "id": "EB03-030",
+    "name": "Viola",
+    "category": "Character",
+    "colors": [
+      "Purple"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Dressrosa"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/EB03-030.png"
+  },
+  {
+    "id": "EB03-040",
+    "name": "Kalifa",
+    "category": "Character",
+    "colors": [
+      "Black"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "CP9"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/EB03-040.png"
+  },
+  {
+    "id": "OP01-001",
+    "name": "Roronoa Zoro",
+    "category": "Leader",
+    "colors": [
+      "Red"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "types": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[DON!! x1] [Your Turn] All of your Characters gain +1000 power.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP01-001.png"
+  },
+  {
+    "id": "OP01-006",
+    "name": "Otama",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Land of Wano"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "[On Play] Give up to 1 of your opponent's Characters −2000 power during this turn.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP01-006.png"
+  },
+  {
+    "id": "OP01-025",
+    "name": "Roronoa Zoro",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[Rush] (This card can attack on the turn in which it is played.)",
+    "triggerText": null,
+    "keywords": {
+      "rush": true
+    },
+    "img": "cards/OP01-025.png"
+  },
+  {
+    "id": "OP01-027",
+    "name": "Round Table",
+    "category": "Event",
+    "colors": [
+      "Red"
+    ],
+    "cost": 4,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Supernovas",
+      "Beautiful Pirates"
+    ],
+    "attributes": [],
+    "effectText": "[Main] Give up to 1 of your opponent's Characters −10000 power during this turn.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP01-027.png"
+  },
+  {
+    "id": "OP01-029",
+    "name": "Radical Beam!!",
+    "category": "Event",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Straw Hat Crew"
+    ],
+    "attributes": [],
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, if you have 2 or less Life cards, that card gains an additional +2000 power.",
+    "triggerText": "[Trigger] Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+    "keywords": {},
+    "img": "cards/OP01-029.png"
+  },
+  {
+    "id": "OP01-033",
+    "name": "Izo",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Land of Wano",
+      "Former Whitebeard Pirates"
+    ],
+    "attributes": [
+      "Ranged"
+    ],
+    "effectText": "[On Play] Rest up to 1 of your opponent's Characters with a cost of 4 or less.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP01-033.png"
+  },
+  {
+    "id": "OP01-048",
+    "name": "Nekomamushi",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Minks",
+      "Land of Wano",
+      "The Akazaya Nine"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[On Play] Rest up to 1 of your opponent's Characters with a cost of 3 or less.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP01-048.png"
+  },
+  {
+    "id": "OP01-054",
+    "name": "X.Drake",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Supernovas",
+      "Navy",
+      "Drake Pirates"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[On Play] K.O. up to 1 of your opponent's rested Characters with a cost of 4 or less.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP01-054.png"
+  },
+  {
+    "id": "OP04-014",
+    "name": "Monkey.D.Luffy",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 8,
+    "power": 9000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Alabasta",
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[Banish] (When this card deals damage, the target card is trashed without activating its Trigger.)",
+    "triggerText": null,
+    "keywords": {
+      "banish": true
+    },
+    "img": "cards/OP04-014.png"
+  },
+  {
+    "id": "OP06-022",
+    "name": "Yamato",
+    "category": "Leader",
+    "colors": [
+      "Green",
+      "Yellow"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 4,
+    "types": [
+      "Land of Wano"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[Double Attack] (This card deals 2 damage.) [Activate: Main] [Once Per Turn] If your opponent has 3 or less Life cards, give up to 2 rested DON!! cards to 1 of your Characters.",
+    "triggerText": null,
+    "keywords": {
+      "doubleAttack": true
+    },
+    "img": "cards/OP06-022.png"
+  },
+  {
+    "id": "OP06-087",
+    "name": "Cerberus",
+    "category": "Character",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Thriller Bark Pirates"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/OP06-087.png"
+  },
+  {
+    "id": "OP08-003",
+    "name": "Twenty Doctors",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Drum Kingdom"
+    ],
+    "attributes": [
+      "Wisdom"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/OP08-003.png"
+  },
+  {
+    "id": "OP10-094",
+    "name": "Ryuma",
+    "category": "Character",
+    "colors": [
+      "Black"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Land of Wano",
+      "Thriller Bark Pirates"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[DON!! x1] This Character gains [Double Attack].",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP10-094.png"
+  },
+  {
+    "id": "OP11-003",
+    "name": "Usopp",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Ranged"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP11-003.png"
+  },
+  {
+    "id": "OP11-032",
+    "name": "Surume",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Animal",
+      "Fish-Man Island"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP11-032.png"
+  },
+  {
+    "id": "OP11-033",
+    "name": "Bird Neptunian",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Neptunian"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP11-033.png"
+  },
+  {
+    "id": "OP11-045",
+    "name": "Vinsmoke Niji",
+    "category": "Character",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "The Vinsmoke Family",
+      "GERMA 66"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP11-045.png"
+  },
+  {
+    "id": "OP11-053",
+    "name": "Tony Tony.Chopper",
+    "category": "Character",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Animal",
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP11-053.png"
+  },
+  {
+    "id": "OP11-068",
+    "name": "Charlotte Daifuku",
+    "category": "Character",
+    "colors": [
+      "Purple"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Big Mom Pirates"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP11-068.png"
+  },
+  {
+    "id": "OP11-087",
+    "name": "Miss Sarahebi",
+    "category": "Character",
+    "colors": [
+      "Black"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Animal Kingdom Pirates",
+      "SMILE"
+    ],
+    "attributes": [
+      "Wisdom"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP11-087.png"
+  },
+  {
+    "id": "OP11-105",
+    "name": "Charlotte Chiffon",
+    "category": "Character",
+    "colors": [
+      "Yellow"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Firetank Pirates",
+      "Former Big Mom Pirates"
+    ],
+    "attributes": [
+      "Wisdom"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP11-105.png"
+  },
+  {
+    "id": "OP11-111",
+    "name": "Mamboshi",
+    "category": "Character",
+    "colors": [
+      "Yellow"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Merfolk",
+      "Fish-Man Island"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP11-111.png"
+  },
+  {
+    "id": "OP12-050",
+    "name": "Jaguar.D.Saul",
+    "category": "Character",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Giant",
+      "Ohara",
+      "Navy"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/OP12-050.png"
+  },
+  {
+    "id": "OP12-106",
+    "name": "Trafalgar Law",
+    "category": "Character",
+    "colors": [
+      "Yellow"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Dressrosa",
+      "Supernovas",
+      "Heart Pirates"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/OP12-106.png"
+  },
+  {
+    "id": "OP13-020",
+    "name": "Meteor Fist",
+    "category": "Event",
+    "colors": [
+      "Red"
+    ],
+    "cost": 3,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Navy"
+    ],
+    "attributes": [],
+    "effectText": "[Main] Give up to 1 of your opponent's Characters −5000 power during this turn.",
+    "triggerText": "[Trigger] Activate this card's [Main] effect.",
+    "keywords": {},
+    "img": "cards/OP13-020.png"
+  },
+  {
+    "id": "OP13-022",
+    "name": "Windmill Village",
+    "category": "Stage",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Windmill Village"
+    ],
+    "attributes": [],
+    "effectText": "[Activate: Main] You may rest this Stage: Up to 1 of your Characters with 2000 base power or less gains +1000 power during this turn.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP13-022.png"
+  },
+  {
+    "id": "OP17-079",
+    "name": "Monkey.D.Luffy",
+    "category": "Leader",
+    "colors": [
+      "Black"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "types": [
+      "Elbaph",
+      "The Four Emperors",
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "All of your Characters with a cost of 12 or more gain [Blocker]. (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/OP17-079.png"
+  },
+  {
+    "id": "P-003",
+    "name": "Eustass\"Captain\"Kid",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 3,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Supernovas",
+      "Kid Pirates"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "[DON!! x2] This Character gains [Double Attack]. (This card deals 2 damage.)",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/P-003.png"
+  },
+  {
+    "id": "P-006",
+    "name": "Monkey.D.Luffy",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 3,
+    "power": 3000,
+    "counter": 2000,
+    "life": null,
+    "types": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[DON!! x2] [Your Turn] This Character gains +2000 power.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/P-006.png"
+  },
+  {
+    "id": "P-028",
+    "name": "Portgas.D.Ace",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Whitebeard Pirates"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "[Double Attack] (This card deals 2 damage.)",
+    "triggerText": null,
+    "keywords": {
+      "doubleAttack": true
+    },
+    "img": "cards/P-028.png"
+  },
+  {
+    "id": "P-045",
+    "name": "Roronoa Zoro",
+    "category": "Character",
+    "colors": [
+      "Purple"
+    ],
+    "cost": 6,
+    "power": 7000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[Banish] (When this card deals damage, the target card is trashed without activating its Trigger.)",
+    "triggerText": null,
+    "keywords": {
+      "banish": true
+    },
+    "img": "cards/P-045.png"
+  },
+  {
+    "id": "ST01-001",
+    "name": "Monkey.D.Luffy",
+    "category": "Leader",
+    "colors": [
+      "Red"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "types": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[Activate: Main] [Once Per Turn] Give this Leader or 1 of your Characters up to 1 rested DON!! card.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST01-001.png"
+  },
+  {
+    "id": "ST01-003",
+    "name": "Karoo",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Animal",
+      "Alabasta"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST01-003.png"
+  },
+  {
+    "id": "ST01-004",
+    "name": "Sanji",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[DON!! x2] This Character gains [Rush]. (This card can attack on the turn in which it is played.)",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST01-004.png"
+  },
+  {
+    "id": "ST01-006",
+    "name": "Tony Tony.Chopper",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Animal",
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/ST01-006.png"
+  },
+  {
+    "id": "ST01-008",
+    "name": "Nico Robin",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Wisdom"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST01-008.png"
+  },
+  {
+    "id": "ST01-009",
+    "name": "Nefeltari Vivi",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Alabasta"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST01-009.png"
+  },
+  {
+    "id": "ST01-012",
+    "name": "Monkey.D.Luffy",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 5,
+    "power": 6000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[Rush] (This card can attack on the turn in which it is played.) [DON!! x2] [When Attacking] Your opponent cannot activate [Blocker] during this battle.",
+    "triggerText": null,
+    "keywords": {
+      "rush": true
+    },
+    "img": "cards/ST01-012.png"
+  },
+  {
+    "id": "ST01-013",
+    "name": "Roronoa Zoro",
+    "category": "Character",
+    "colors": [
+      "Red"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[DON!! x1] This Character gains +1000 power.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST01-013.png"
+  },
+  {
+    "id": "ST01-014",
+    "name": "Guard Point",
+    "category": "Event",
+    "colors": [
+      "Red"
+    ],
+    "cost": 1,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Animal",
+      "Straw Hat Crew"
+    ],
+    "attributes": [],
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +3000 power during this battle.",
+    "triggerText": "[Trigger] Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
+    "keywords": {},
+    "img": "cards/ST01-014.png"
+  },
+  {
+    "id": "ST01-015",
+    "name": "Gum-Gum Jet Pistol",
+    "category": "Event",
+    "colors": [
+      "Red"
+    ],
+    "cost": 4,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Supernovas",
+      "Straw Hat Crew"
+    ],
+    "attributes": [],
+    "effectText": "[Main] K.O. up to 1 of your opponent's Characters with 6000 power or less.",
+    "triggerText": "[Trigger] Activate this card's [Main] effect.",
+    "keywords": {},
+    "img": "cards/ST01-015.png"
+  },
+  {
+    "id": "ST01-017",
+    "name": "Thousand Sunny",
+    "category": "Stage",
+    "colors": [
+      "Red"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Straw Hat Crew"
+    ],
+    "attributes": [],
+    "effectText": "[Activate: Main] You may rest this Stage: Up to 1 {Straw Hat Crew} type Leader or Character card on your field gains +1000 power during this turn.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST01-017.png"
+  },
+  {
+    "id": "ST02-002",
+    "name": "Vito",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Firetank Pirates"
+    ],
+    "attributes": [
+      "Ranged"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST02-002.png"
+  },
+  {
+    "id": "ST02-004",
+    "name": "Capone\"Gang\"Bege",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Supernovas",
+      "Firetank Pirates"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/ST02-004.png"
+  },
+  {
+    "id": "ST02-006",
+    "name": "Koby",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Navy"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST02-006.png"
+  },
+  {
+    "id": "ST02-011",
+    "name": "Heat",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Kid Pirates"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST02-011.png"
+  },
+  {
+    "id": "ST02-016",
+    "name": "Repel",
+    "category": "Event",
+    "colors": [
+      "Green"
+    ],
+    "cost": 2,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Supernovas",
+      "Kid Pirates"
+    ],
+    "attributes": [],
+    "effectText": "[Counter] Up to 1 of your Leader or Character cards gains +4000 power during this battle. Then, set up to 1 of your DON!! cards as active.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST02-016.png"
+  },
+  {
+    "id": "ST03-001",
+    "name": "Crocodile",
+    "category": "Leader",
+    "colors": [
+      "Blue"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "types": [
+      "The Seven Warlords of the Sea",
+      "Baroque Works"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "[Activate: Main] [Once Per Turn] DON!! −4 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Return up to 1 Character with a cost of 5 or less to the owner's hand.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST03-001.png"
+  },
+  {
+    "id": "ST03-002",
+    "name": "Edward Weevil",
+    "category": "Character",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 3,
+    "power": 5000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "The Seven Warlords of the Sea"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST03-002.png"
+  },
+  {
+    "id": "ST03-006",
+    "name": "Jinbe",
+    "category": "Character",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Fish-Man",
+      "The Seven Warlords of the Sea",
+      "The Sun Pirates"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST03-006.png"
+  },
+  {
+    "id": "ST03-008",
+    "name": "Trafalgar Law",
+    "category": "Character",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 1,
+    "power": 1000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "The Seven Warlords of the Sea",
+      "Heart Pirates"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/ST03-008.png"
+  },
+  {
+    "id": "ST03-009",
+    "name": "Donquixote Doflamingo",
+    "category": "Character",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 7,
+    "power": 7000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "The Seven Warlords of the Sea",
+      "Donquixote Pirates"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "[On Play] Return up to 1 Character with a cost of 7 or less to the owner's hand.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST03-009.png"
+  },
+  {
+    "id": "ST03-011",
+    "name": "Buggy",
+    "category": "Character",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 1,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "The Seven Warlords of the Sea",
+      "Buggy's Delivery"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST03-011.png"
+  },
+  {
+    "id": "ST03-014",
+    "name": "Marshall.D.Teach",
+    "category": "Character",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 4,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "The Seven Warlords of the Sea",
+      "Blackbeard Pirates"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "[On Play] Return up to 1 Character with a cost of 3 or less to the owner's hand.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST03-014.png"
+  },
+  {
+    "id": "ST03-015",
+    "name": "Sables",
+    "category": "Event",
+    "colors": [
+      "Blue"
+    ],
+    "cost": 4,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "types": [
+      "The Seven Warlords of the Sea",
+      "Baroque Works"
+    ],
+    "attributes": [],
+    "effectText": "[Main] Return up to 1 Character with a cost of 7 or less to the owner's hand.",
+    "triggerText": "[Trigger] Activate this card's [Main] effect.",
+    "keywords": {},
+    "img": "cards/ST03-015.png"
+  },
+  {
+    "id": "ST04-001",
+    "name": "Kaido",
+    "category": "Leader",
+    "colors": [
+      "Purple"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "types": [
+      "The Four Emperors",
+      "Animal Kingdom Pirates"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[Activate: Main] [Once Per Turn] DON!! −7 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Trash up to 1 of your opponent's Life cards.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST04-001.png"
+  },
+  {
+    "id": "ST04-007",
+    "name": "Sheepshead",
+    "category": "Character",
+    "colors": [
+      "Purple"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Animal Kingdom Pirates",
+      "Smile"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST04-007.png"
+  },
+  {
+    "id": "ST04-009",
+    "name": "Ginrummy",
+    "category": "Character",
+    "colors": [
+      "Purple"
+    ],
+    "cost": 1,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Animal Kingdom Pirates",
+      "Smile"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST04-009.png"
+  },
+  {
+    "id": "ST04-011",
+    "name": "Black Maria",
+    "category": "Character",
+    "colors": [
+      "Purple"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Animal Kingdom Pirates"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/ST04-011.png"
+  },
+  {
+    "id": "ST04-012",
+    "name": "Page One",
+    "category": "Character",
+    "colors": [
+      "Purple"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Animal Kingdom Pirates"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST04-012.png"
+  },
+  {
+    "id": "ST04-017",
+    "name": "Onigashima Island",
+    "category": "Stage",
+    "colors": [
+      "Purple"
+    ],
+    "cost": 3,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Animal Kingdom Pirates"
+    ],
+    "attributes": [],
+    "effectText": "[Activate: Main] You may rest this Stage: If your Leader has the {Animal Kingdom Pirates} type, add up to 1 DON!! card from your DON!! deck and rest it.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST04-017.png"
+  },
+  {
+    "id": "ST05-001",
+    "name": "Shanks",
+    "category": "Leader",
+    "colors": [
+      "Purple"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "types": [
+      "FILM",
+      "The Four Emperors",
+      "Red-Haired Pirates"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[Activate: Main] [Once Per Turn] DON!! −3 (You may return the specified number of DON!! cards from your field to your DON!! deck.): All of your {FILM} type Characters gain +2000 power during this turn.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST05-001.png"
+  },
+  {
+    "id": "ST05-002",
+    "name": "Ain",
+    "category": "Character",
+    "colors": [
+      "Purple"
+    ],
+    "cost": 4,
+    "power": 5000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "FILM",
+      "Neo Navy"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "[On Play] Add up to 1 DON!! card from your DON!! deck and rest it.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST05-002.png"
+  },
+  {
+    "id": "ST05-003",
+    "name": "Ann",
+    "category": "Character",
+    "colors": [
+      "Purple"
+    ],
+    "cost": 2,
+    "power": 3000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "FILM",
+      "The Pirates Fest"
+    ],
+    "attributes": [
+      "Special"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/ST05-003.png"
+  },
+  {
+    "id": "ST06-003",
+    "name": "Jango",
+    "category": "Character",
+    "colors": [
+      "Black"
+    ],
+    "cost": 1,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Navy"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST06-003.png"
+  },
+  {
+    "id": "ST06-007",
+    "name": "Tsuru",
+    "category": "Character",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Navy"
+    ],
+    "attributes": [
+      "Wisdom"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/ST06-007.png"
+  },
+  {
+    "id": "ST06-009",
+    "name": "Fullbody",
+    "category": "Character",
+    "colors": [
+      "Black"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Navy"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST06-009.png"
+  },
+  {
+    "id": "ST06-011",
+    "name": "Momonga",
+    "category": "Character",
+    "colors": [
+      "Black"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Navy"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST06-011.png"
+  },
+  {
+    "id": "ST07-002",
+    "name": "Charlotte Anana",
+    "category": "Character",
+    "colors": [
+      "Yellow"
+    ],
+    "cost": 1,
+    "power": 3000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Big Mom Pirates"
+    ],
+    "attributes": [
+      "Wisdom"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST07-002.png"
+  },
+  {
+    "id": "ST07-006",
+    "name": "Charlotte Flampe",
+    "category": "Character",
+    "colors": [
+      "Yellow"
+    ],
+    "cost": 2,
+    "power": 4000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Big Mom Pirates"
+    ],
+    "attributes": [
+      "Ranged"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST07-006.png"
+  },
+  {
+    "id": "ST07-012",
+    "name": "Baron Tamago",
+    "category": "Character",
+    "colors": [
+      "Yellow"
+    ],
+    "cost": 4,
+    "power": 6000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Big Mom Pirates"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "-",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST07-012.png"
+  },
+  {
+    "id": "ST08-015",
+    "name": "Gum-Gum Pistol",
+    "category": "Event",
+    "colors": [
+      "Black"
+    ],
+    "cost": 3,
+    "power": null,
+    "counter": null,
+    "life": null,
+    "types": [
+      "Straw Hat Crew"
+    ],
+    "attributes": [],
+    "effectText": "[Main] K.O. up to 1 of your opponent's Characters with a cost of 2 or less.",
+    "triggerText": "[Trigger] Draw 1 card.",
+    "keywords": {},
+    "img": "cards/ST08-015.png"
+  },
+  {
+    "id": "ST09-001",
+    "name": "Yamato",
+    "category": "Leader",
+    "colors": [
+      "Yellow"
+    ],
+    "cost": null,
+    "power": 5000,
+    "counter": null,
+    "life": 5,
+    "types": [
+      "Land of Wano"
+    ],
+    "attributes": [
+      "Strike"
+    ],
+    "effectText": "[DON!! x1] [Opponent's Turn] If you have 2 or less Life cards, this Leader gains +1000 power.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST09-001.png"
+  },
+  {
+    "id": "ST16-004",
+    "name": "Shanks",
+    "category": "Character",
+    "colors": [
+      "Green"
+    ],
+    "cost": 9,
+    "power": 11000,
+    "counter": null,
+    "life": null,
+    "types": [
+      "FILM",
+      "The Four Emperors",
+      "Red-Haired Pirates"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[On Play] K.O. up to 1 of your opponent's rested Characters.",
+    "triggerText": null,
+    "keywords": {},
+    "img": "cards/ST16-004.png"
+  },
+  {
+    "id": "ST29-011",
+    "name": "Brook",
+    "category": "Character",
+    "colors": [
+      "Yellow"
+    ],
+    "cost": 2,
+    "power": 2000,
+    "counter": 1000,
+    "life": null,
+    "types": [
+      "Egghead",
+      "Straw Hat Crew"
+    ],
+    "attributes": [
+      "Slash"
+    ],
+    "effectText": "[Blocker] (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
+    "triggerText": null,
+    "keywords": {
+      "blocker": true
+    },
+    "img": "cards/ST29-011.png"
+  }
+]
