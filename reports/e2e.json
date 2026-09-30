@@ -1,0 +1,324 @@
+{
+  "at": "2026-09-30T20:26:52.672Z",
+  "base": "http://127.0.0.1:5199/",
+  "viewport": "844x390",
+  "total": 45,
+  "passed": 45,
+  "results": [
+    {
+      "id": "gen-0001",
+      "difficulty": 1,
+      "steps": 3,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0002",
+      "difficulty": 1,
+      "steps": 2,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0003",
+      "difficulty": 1,
+      "steps": 2,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0004",
+      "difficulty": 4,
+      "steps": 6,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0005",
+      "difficulty": 5,
+      "steps": 7,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0006",
+      "difficulty": 2,
+      "steps": 4,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0007",
+      "difficulty": 1,
+      "steps": 3,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0008",
+      "difficulty": 1,
+      "steps": 2,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0009",
+      "difficulty": 1,
+      "steps": 2,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0010",
+      "difficulty": 3,
+      "steps": 5,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0011",
+      "difficulty": 1,
+      "steps": 2,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0012",
+      "difficulty": 4,
+      "steps": 6,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0013",
+      "difficulty": 5,
+      "steps": 7,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0014",
+      "difficulty": 2,
+      "steps": 4,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0015",
+      "difficulty": 1,
+      "steps": 3,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0016",
+      "difficulty": 4,
+      "steps": 6,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0017",
+      "difficulty": 5,
+      "steps": 7,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0018",
+      "difficulty": 2,
+      "steps": 4,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0019",
+      "difficulty": 1,
+      "steps": 3,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0020",
+      "difficulty": 4,
+      "steps": 6,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0021",
+      "difficulty": 5,
+      "steps": 7,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0022",
+      "difficulty": 4,
+      "steps": 6,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0023",
+      "difficulty": 4,
+      "steps": 6,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0024",
+      "difficulty": 5,
+      "steps": 7,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0025",
+      "difficulty": 2,
+      "steps": 4,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0026",
+      "difficulty": 4,
+      "steps": 6,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0027",
+      "difficulty": 5,
+      "steps": 7,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0028",
+      "difficulty": 3,
+      "steps": 5,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0029",
+      "difficulty": 4,
+      "steps": 6,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0030",
+      "difficulty": 5,
+      "steps": 7,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0031",
+      "difficulty": 2,
+      "steps": 4,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0032",
+      "difficulty": 4,
+      "steps": 6,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0033",
+      "difficulty": 5,
+      "steps": 7,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0034",
+      "difficulty": 2,
+      "steps": 4,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0035",
+      "difficulty": 5,
+      "steps": 7,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0036",
+      "difficulty": 2,
+      "steps": 4,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0037",
+      "difficulty": 2,
+      "steps": 4,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0038",
+      "difficulty": 3,
+      "steps": 5,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0039",
+      "difficulty": 2,
+      "steps": 4,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0040",
+      "difficulty": 3,
+      "steps": 5,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0041",
+      "difficulty": 3,
+      "steps": 5,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0042",
+      "difficulty": 3,
+      "steps": 5,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0043",
+      "difficulty": 3,
+      "steps": 5,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0044",
+      "difficulty": 3,
+      "steps": 5,
+      "ok": true,
+      "errors": []
+    },
+    {
+      "id": "gen-0045",
+      "difficulty": 3,
+      "steps": 5,
+      "ok": true,
+      "errors": []
+    }
+  ]
+}
