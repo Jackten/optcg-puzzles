@@ -1,6 +1,6 @@
 import definitions from './cards.generated.json';
 import {effects, type Ability, type Effect, type Selector} from './effects';
-import type {Action,CardDef,CardInst,Engine,GameEvent,GameState,Side,StepResult} from './api';
+import type {Action,CardDef,CardInst,Engine,GameEvent,GameState,PlayerState,Side,StepResult} from './api';
 export const cards = definitions as CardDef[];
 const catalog=new Map(cards.map(c=>[c.id,c]));
 export function getCard(id:string):CardDef { const c=catalog.get(id);if(!c)throw Error(`Card outside implemented pool: ${id}`);return c; }
@@ -28,7 +28,11 @@ function candidates(s:GameState,side:Side,sel:Selector):CardInst[]{
  const d=getCard(c.defId);return (sel.maxCost===undefined||(d.cost||0)<=sel.maxCost)&&(sel.maxPower===undefined||power(s,c.uid)<=sel.maxPower)&&(sel.rested===undefined||c.rested===sel.rested)&&(!sel.type||d.types.includes(sel.type))&&(sel.baseMax===undefined||(d.power||0)<=sel.baseMax);
  });
 }
-const clone=(s:GameState):GameState=>structuredClone(s);
+// Hand-rolled deep copy of the plain-JSON state; structuredClone dominated solver time.
+const cloneCard=(c:CardInst):CardInst=>{const x={...c};if(c.flags)x.flags={...c.flags};return x;};
+const cloneCards=(xs:CardInst[]):CardInst[]=>xs.map(cloneCard);
+const clonePlayer=(p:PlayerState):PlayerState=>({...p,leader:cloneCard(p.leader),characters:cloneCards(p.characters),stage:p.stage&&cloneCard(p.stage),hand:cloneCards(p.hand),life:cloneCards(p.life),deck:cloneCards(p.deck),trash:cloneCards(p.trash)});
+const clone=(s:GameState):GameState=>({...s,me:clonePlayer(s.me),opp:clonePlayer(s.opp),turnFlags:{...s.turnFlags},log:[...s.log]});
 function allowed(s:GameState,side:Side,src:CardInst,a:Ability):boolean {
  const p=s[side];return (!a.once||!src.flags?.used)&&(!a.restSelf||!src.rested)&&p.donActive>=(a.pay||0)&&totalDon(s,side)>=(a.returnDon||0)&&src.don>=(a.donMin||0)&&(a.lifeMax===undefined||s[side==='me'?'opp':'me'].life.length<=a.lifeMax);
 }
@@ -136,7 +140,7 @@ export function hash(s:GameState):string {
  const p=(side:Side)=>{const x=s[side];return [card(x.leader),x.characters.map(card).sort(),x.stage?card(x.stage):null,x.hand.map(card).sort(),x.life.map(card),x.deck.map(card),x.deckCount,x.donActive,x.donRested,x.donDeck];};return JSON.stringify([s.phase,s.winner,p('me'),p('opp'),s.turnFlags]);
 }
 export interface SolveResult {win:boolean|null;line:Action[];nodes:number;winningFirstMoves:number;complete:boolean;minAttackerActions:number|null}
-interface Search {depthLimit:number;left:number;nodes:number;memo:Map<string,boolean>;pv:Map<string,Action>;deadline:number}
+interface Search {depthLimit:number;left:number;nodes:number;memo:Map<string,boolean>;winAt:Map<string,number>;lossAt:Map<string,number>;pv:Map<string,Action>;deadline:number}
 function ordered(s:GameState):Action[]{return legalActions(s).filter(a=>a.type!=='endTurn').sort((a,b)=>score(s,b)-score(s,a));}
 function score(s:GameState,a:Action):number {
  if(a.type==='play')return 50+(rule(findCard(s,a.uid)!.card).onPlay?10:0);
@@ -145,25 +149,35 @@ function score(s:GameState,a:Action):number {
  if(a.type==='attack')return (a.target===s.opp.leader.uid?10:25)-power(s,a.attacker)/10000;
  return -100;
 }
-function search(s:GameState,c:Search,depth=c.depthLimit):boolean|null {
- if(s.phase==='over')return s.winner==='me';if(depth<=0)return false;if(--c.left<0||performance.now()>c.deadline)return null;c.nodes++;
- const key=depth+':'+hash(s),cached=c.memo.get(key);if(cached!==undefined)return cached;
+// Sound cutoff: most Leader damage still reachable this turn (Double Attack = 2, Rush cards in hand count),
+// ignoring Blockers and counters. Below Life+1 the position is lost whatever happens next.
+function mayDouble(c:CardInst):boolean{const d=getCard(c.defId),r=rule(c);return !!(d.keywords.doubleAttack||r.keywords?.doubleAttack||r.static==='donDouble');}
+function mayRush(c:CardInst):boolean{const d=getCard(c.defId),r=rule(c);return !!(d.keywords.rush||r.keywords?.rush||r.static==='donRush');}
+function damageCeiling(s:GameState):number{let n=0;for(const c of field(s,'me'))if(!c.rested&&(!c.playedThisTurn||mayRush(c)))n+=mayDouble(c)?2:1;for(const c of s.me.hand)if(getCard(c.defId).category==='Character'&&mayRush(c))n+=mayDouble(c)?2:1;return n;}
+// Consecutive DON!! attaches commute, so only attach in uid order within a run (lastDon = previous target).
+function search(s:GameState,c:Search,depth=c.depthLimit,lastDon=''):boolean|null {
+ if(s.phase==='over')return s.winner==='me';if(depth<=0)return false;if(damageCeiling(s)<s.opp.life.length+1)return false;if(--c.left<0||performance.now()>c.deadline)return null;c.nodes++;
+ // A win holds under any attach-order restriction; a loss found under one holds only for that restriction (or for none).
+ const key=hash(s),lk=key+'|'+lastDon,w=c.winAt.get(key);if(w!==undefined&&w<=depth)return true;const l=c.lossAt.get(lk),l0=lastDon?c.lossAt.get(key+'|'):undefined;if(l!==undefined&&l>=depth||l0!==undefined&&l0>=depth)return false;
  let unknown=false;
  for(const a of ordered(s)){
+ if(a.type==='attachDon'&&a.target<lastDon)continue;
  const responses=a.type==='attack'?attackResponses(s,a):[mainApply(s,a)];let yes=true,uncertain=false;
  // Best defender resource state first, to find a refutation quickly.
  responses.sort((x,y)=>compareDefense(y.state,x.state));
- for(const r of responses){const ok=search(r.state,c,depth-1);if(ok===false){yes=false;break;}if(ok===null)uncertain=true;}
- if(yes&&!uncertain){c.memo.set(key,true);c.pv.set(hash(s),a);return true;}if(yes&&uncertain)unknown=true;
+ for(const r of responses){const ok=search(r.state,c,depth-1,a.type==='attachDon'?a.target:'');if(ok===false){yes=false;break;}if(ok===null)uncertain=true;}
+ if(yes&&!uncertain){c.winAt.set(key,Math.min(depth,w??Infinity));if(w===undefined||depth<w)c.pv.set(key,a);return true;}if(yes&&uncertain)unknown=true;
  }
- if(unknown)return null;c.memo.set(key,false);return false;
+ if(unknown)return null;c.lossAt.set(lk,Math.max(depth,l??-Infinity));return false;
 }
 function defenseResources(s:GameState):number[]{return [s.winner==='me'?-1:0,s.opp.life.length,s.opp.characters.filter(c=>!c.rested&&keyword(s,c,'blocker')).length,s.opp.characters.filter(c=>keyword(s,c,'blocker')).length,s.opp.hand.reduce((n,c)=>{const r=rule(c);return n+(getCard(c.defId).counter||((r.counter||0)+(s.opp.life.length<=2?r.counterLowLife||0:0)));},0),s.opp.donActive];}
 function compareDefense(a:GameState,b:GameState):number {const x=defenseResources(a),y=defenseResources(b);for(let i=0;i<x.length;i++)if(x[i]!==y[i])return x[i]-y[i];return 0;}
 
-function context(budget:number,ms=Infinity):Search{return {depthLimit:Infinity,left:budget,nodes:0,memo:new Map(),pv:new Map(),deadline:performance.now()+ms};}
+function context(budget:number,ms=Infinity):Search{return {depthLimit:Infinity,left:budget,nodes:0,memo:new Map(),winAt:new Map(),lossAt:new Map(),pv:new Map(),deadline:performance.now()+ms};}
 export function solve(s:GameState,nodeBudget=200000,countFirst=true):SolveResult {
- const ctx=context(nodeBudget);let win:boolean|null=false,min:number|null=null;for(let d=1;d<=30;d++){ctx.depthLimit=d;win=search(s,ctx);if(win!==false){if(win)min=d;break;}}if(win===false){ctx.depthLimit=Infinity;win=search(s,ctx);}ctx.depthLimit=Infinity;const principal=new Map(ctx.pv);let winningFirstMoves=0,complete=win!==null;
+ const ctx=context(nodeBudget);let min:number|null=null;
+ // Unbounded pass first: its losses hold at every depth, so the shortest-line pass below skips them.
+ let win=search(s,ctx,Infinity);if(win){for(let d=1;d<=30;d++){ctx.depthLimit=d;const w=search(s,ctx,d);if(w!==false){if(w)min=d;else win=null;break;}}}ctx.depthLimit=Infinity;const principal=new Map(ctx.pv);let winningFirstMoves=0,complete=win!==null;
  if(win&&countFirst)for(const a of ordered(s)){const responses=a.type==='attack'?attackResponses(s,a):[mainApply(s,a)];let w=true;for(const r of responses){const ok=search(r.state,ctx);if(ok!==true){w=false;if(ok===null)complete=false;break;}}if(w)winningFirstMoves++;}
  const line:Action[]=[];let st=s;for(let i=0;i<50&&st.phase==='main';i++){const a=principal.get(hash(st));if(!a)break;line.push(a);const rs=a.type==='attack'?attackResponses(st,a):[mainApply(st,a)];rs.sort((x,y)=>compareDefense(y.state,x.state));st=rs[0].state;}
  return {win,line,nodes:ctx.nodes,winningFirstMoves,complete,minAttackerActions:min};

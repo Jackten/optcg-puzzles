@@ -9882,9 +9882,3582 @@
         "forcedWin": true,
         "minAttackerActions": 5
       }
+    },
+    {
+      "id": "hard-001",
+      "title": "Gear Shift: Leader abilities",
+      "difficulty": 5,
+      "concepts": [
+        "Leader abilities",
+        "counter math",
+        "DON!! distribution",
+        "Blockers"
+      ],
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Tony Tony.Chopper can block. They can counter with Twenty Doctors (+1,000) and Twenty Doctors (+1,000). You have 5 active DON!! and Marshall.D.Teach, Marshall.D.Teach, Jaguar.D.Saul and Sables in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "ST03-001",
+            "rested": true,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "ST03-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-2",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-3",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-4",
+              "defId": "OP12-050",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-5",
+              "defId": "ST03-015",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-14",
+              "defId": "ST03-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-15",
+              "defId": "ST03-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-16",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-17",
+              "defId": "ST03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 5,
+          "donRested": 5,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "OP01-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-6",
+              "defId": "ST01-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-8",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "h-9",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [
+            {
+              "uid": "life-7",
+              "defId": "EB03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-10",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-11",
+              "defId": "ST01-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-12",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-13",
+              "defId": "EB03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "activate",
+            "uid": "m-L",
+            "targets": [
+              "o-6",
+              "$don:rested:4"
+            ]
+          },
+          "why": "Use Crocodile's Leader ability first. It costs 4 DON!! (returned to your DON!! deck) and sends Tony Tony.Chopper back to its owner's hand."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-0"
+          },
+          "why": "Donquixote Doflamingo goes to 8,000. Keep loading it: it's going after their Leader Roronoa Zoro (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-0"
+          },
+          "why": "Donquixote Doflamingo goes to 9,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. They'd need +5,000 to stop it, and their hand only has +2,000."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Jinbe goes to 5,000. Keep loading it: it's going after their Leader Roronoa Zoro (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Jinbe goes to 6,000. Keep loading it: it's going after their Leader Roronoa Zoro (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Jinbe goes to 7,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. They'd need +3,000 to stop it, and their hand only has +2,000."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Jinbe swings at their Leader Roronoa Zoro, 7,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Donquixote Doflamingo swings at their Leader Roronoa Zoro, 9,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Long-press your Leader, Crocodile, and read its ability. What does it buy you before your first attack?",
+        "First move: Crocodile's ability.",
+        "1. Crocodile's ability  2. 2 DON!! to Donquixote Doflamingo  3. 3 DON!! to Jinbe  4. Jinbe attacks their Leader  5. Donquixote Doflamingo attacks their Leader"
+      ],
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 10515,
+        "forcedWin": true,
+        "minAttackerActions": 8
+      }
+    },
+    {
+      "id": "hard-002",
+      "title": "Conqueror's Haki: bait the Blocker",
+      "difficulty": 5,
+      "concepts": [
+        "bait the Blocker",
+        "counter math",
+        "DON!! distribution"
+      ],
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Black Maria and Ann can block. They can counter with Ginrummy (+1,000). You have 4 active DON!! and Trafalgar Law, Trafalgar Law, Trafalgar Law and Trafalgar Law in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "ST09-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "OP12-106",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "ST07-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-2",
+              "defId": "OP12-106",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-3",
+              "defId": "OP12-106",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-4",
+              "defId": "OP12-106",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-5",
+              "defId": "OP12-106",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-6",
+              "defId": "OP12-106",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-16",
+              "defId": "OP11-105",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-17",
+              "defId": "ST07-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-18",
+              "defId": "ST07-012",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-19",
+              "defId": "ST07-012",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 4,
+          "donRested": 6,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "ST04-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-7",
+              "defId": "ST04-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "o-8",
+              "defId": "ST05-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "o-9",
+              "defId": "EB03-030",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-11",
+              "defId": "ST04-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [
+            {
+              "uid": "life-10",
+              "defId": "ST04-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-12",
+              "defId": "OP11-068",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-13",
+              "defId": "ST04-007",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-14",
+              "defId": "ST04-012",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-15",
+              "defId": "P-045",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Yamato goes to 6,000. Keep loading it: it's going after their Leader Kaido (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Yamato goes to 7,000 against their Leader Kaido (5,000). Ties go to the attacker. They'd need +3,000 to stop it, and their hand only has +1,000."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Charlotte Flampe goes to 5,000. Keep loading it: it's going after their Leader Kaido (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Charlotte Flampe goes to 6,000 against their Leader Kaido (5,000). Ties go to the attacker. They'd need +2,000 to stop it, and their hand only has +1,000."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Charlotte Flampe swings at their Leader Kaido, 6,000 into 5,000. Black Maria blocks and is K.O.'d. That's 1 Blocker used up, 1 more to go."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-L",
+            "target": "o-L"
+          },
+          "why": "Your Leader Yamato swings at their Leader Kaido, 7,000 into 5,000. Ann blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Trafalgar Law (slot 1) swings at their Leader Kaido, 7,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-2",
+            "target": "o-L"
+          },
+          "why": "Trafalgar Law (slot 3) swings at their Leader Kaido, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Their Blockers each stop one attack. Feed them attacks you don't need.",
+        "First move: 2 DON!! to Yamato.",
+        "1. 2 DON!! to Yamato  2. 2 DON!! to Charlotte Flampe  3. Charlotte Flampe attacks their Leader  4. Yamato attacks their Leader  5. Trafalgar Law (slot 1) attacks their Leader  6. Trafalgar Law (slot 3) attacks their Leader"
+      ],
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 15766,
+        "forcedWin": true,
+        "minAttackerActions": 8
+      }
+    },
+    {
+      "id": "hard-003",
+      "title": "Final Voyage: Leader abilities",
+      "difficulty": 5,
+      "concepts": [
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
+        "DON!! distribution"
+      ],
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Brook can block. They can counter with Brook (+1,000) and Brook (+1,000). You have 4 active DON!! and Sables and Jaguar.D.Saul in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "ST03-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "ST03-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-2",
+              "defId": "ST03-015",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-3",
+              "defId": "OP12-050",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-13",
+              "defId": "ST03-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-14",
+              "defId": "ST03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-15",
+              "defId": "ST03-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-16",
+              "defId": "OP11-045",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 4,
+          "donRested": 6,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "ST09-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-4",
+              "defId": "ST29-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "o-5",
+              "defId": "OP11-105",
+              "rested": true,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-7",
+              "defId": "ST29-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "h-8",
+              "defId": "ST29-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [
+            {
+              "uid": "life-6",
+              "defId": "OP11-111",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-9",
+              "defId": "ST07-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-10",
+              "defId": "OP11-111",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-11",
+              "defId": "OP11-111",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-12",
+              "defId": "OP12-106",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "activate",
+            "uid": "m-L",
+            "targets": [
+              "o-4",
+              "$don:rested:4"
+            ]
+          },
+          "why": "Use Crocodile's Leader ability first. It costs 4 DON!! (returned to your DON!! deck) and sends Brook back to its owner's hand."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 6,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +2,000 to stop it."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-L",
+            "target": "o-L"
+          },
+          "why": "Your Leader Crocodile swings at their Leader Yamato, 6,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-0"
+          },
+          "why": "Donquixote Doflamingo goes to 8,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +4,000 to stop it, and their hand only has +1,000."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Jinbe goes to 5,000. Keep loading it: it's going after their Leader Yamato (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Jinbe goes to 6,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +2,000 to stop it, and their hand only has +1,000."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Jinbe swings at their Leader Yamato, 6,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Donquixote Doflamingo swings at their Leader Yamato, 8,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Long-press your Leader, Crocodile, and read its ability. What does it buy you before your first attack?",
+        "First move: Crocodile's ability.",
+        "1. Crocodile's ability  2. 1 DON!! to Crocodile  3. Crocodile attacks their Leader  4. 1 DON!! to Donquixote Doflamingo  5. 2 DON!! to Jinbe  6. Jinbe attacks their Leader  7. Donquixote Doflamingo attacks their Leader"
+      ],
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 67230,
+        "forcedWin": true,
+        "minAttackerActions": 8
+      }
+    },
+    {
+      "id": "hard-004",
+      "title": "Emperor's Gambit: Leader abilities",
+      "difficulty": 5,
+      "concepts": [
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
+        "DON!! distribution"
+      ],
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Ann can block. They can counter with Roronoa Zoro (+1,000), Page One (+1,000) and Roronoa Zoro (+1,000). You have 4 active DON!! and Marshall.D.Teach, Marshall.D.Teach, Trafalgar Law and Sables in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "ST03-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "OP11-045",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-2",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-3",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-4",
+              "defId": "ST03-008",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-5",
+              "defId": "ST03-015",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-15",
+              "defId": "OP12-050",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-16",
+              "defId": "ST03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-17",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-18",
+              "defId": "OP11-053",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 4,
+          "donRested": 6,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "ST04-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-6",
+              "defId": "ST05-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-8",
+              "defId": "P-045",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "h-9",
+              "defId": "ST04-012",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "h-10",
+              "defId": "P-045",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [
+            {
+              "uid": "life-7",
+              "defId": "ST04-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-11",
+              "defId": "ST04-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-12",
+              "defId": "ST04-007",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-13",
+              "defId": "ST04-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-14",
+              "defId": "P-045",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "activate",
+            "uid": "m-L",
+            "targets": [
+              "o-6",
+              "$don:rested:4"
+            ]
+          },
+          "why": "Use Crocodile's Leader ability first. It costs 4 DON!! (returned to your DON!! deck) and sends Ann back to its owner's hand."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 6,000. Keep loading it: it's going after their Leader Kaido (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 7,000 against their Leader Kaido (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Vinsmoke Niji swings at their Leader Kaido, 6,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-0"
+          },
+          "why": "Marshall.D.Teach goes to 5,000. Keep loading it: it's going after their Leader Kaido (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-0"
+          },
+          "why": "Marshall.D.Teach goes to 6,000 against their Leader Kaido (5,000). Ties go to the attacker. They'd need +2,000 to stop it, and their hand only has +1,000."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Marshall.D.Teach swings at their Leader Kaido, 6,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-L",
+            "target": "o-L"
+          },
+          "why": "Your Leader Crocodile swings at their Leader Kaido, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Long-press your Leader, Crocodile, and read its ability. What does it buy you before your first attack?",
+        "First move: Crocodile's ability.",
+        "1. Crocodile's ability  2. 2 DON!! to Crocodile  3. Vinsmoke Niji attacks their Leader  4. 2 DON!! to Marshall.D.Teach  5. Marshall.D.Teach attacks their Leader  6. Crocodile attacks their Leader"
+      ],
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 68134,
+        "forcedWin": true,
+        "minAttackerActions": 8
+      }
+    },
+    {
+      "id": "hard-005",
+      "title": "Road Poneglyph: bait the Blocker",
+      "difficulty": 5,
+      "concepts": [
+        "bait the Blocker",
+        "counter math",
+        "DON!! distribution"
+      ],
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Brook can block. They can counter with Charlotte Anana (+1,000), Charlotte Anana (+1,000) and Baron Tamago (+1,000). You have 4 active DON!! and Otama, Round Table, Round Table and Thousand Sunny in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "OP01-001",
+            "rested": true,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "ST01-008",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "EB03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-2",
+              "defId": "P-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-3",
+              "defId": "ST01-004",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-4",
+              "defId": "OP01-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-5",
+              "defId": "OP01-027",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-6",
+              "defId": "OP01-027",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-7",
+              "defId": "ST01-017",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-17",
+              "defId": "ST01-008",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-18",
+              "defId": "EB03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-19",
+              "defId": "ST01-013",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-20",
+              "defId": "ST01-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 4,
+          "donRested": 6,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "ST09-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-8",
+              "defId": "ST29-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-10",
+              "defId": "ST07-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "h-11",
+              "defId": "ST07-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "h-12",
+              "defId": "ST07-012",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [
+            {
+              "uid": "life-9",
+              "defId": "ST07-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-13",
+              "defId": "ST07-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-14",
+              "defId": "ST07-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-15",
+              "defId": "ST29-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-16",
+              "defId": "OP11-111",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-2"
+          },
+          "why": "Monkey.D.Luffy goes to 4,000. Keep loading it: it's going after their Leader Yamato (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-2"
+          },
+          "why": "Monkey.D.Luffy goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-3"
+          },
+          "why": "Sanji goes to 5,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +1,000 to stop it."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Roronoa Zoro goes from 5,000 to 6,000 power."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Nico Robin swings at their Leader Yamato, 6,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-3",
+            "target": "o-L"
+          },
+          "why": "Sanji swings at their Leader Yamato, 6,000 into 5,000. Brook blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Ain swings at their Leader Yamato, 7,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-2",
+            "target": "o-L"
+          },
+          "why": "Monkey.D.Luffy swings at their Leader Yamato, 8,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Brook can stop exactly one attack. Make sure it's one you can afford to lose.",
+        "First move: 2 DON!! to Monkey.D.Luffy.",
+        "1. 2 DON!! to Monkey.D.Luffy  2. 1 DON!! to Sanji  3. 1 DON!! to Roronoa Zoro  4. Nico Robin attacks their Leader  5. Sanji attacks their Leader  6. Ain attacks their Leader  7. Monkey.D.Luffy attacks their Leader"
+      ],
+      "lesson": "Swing with the attack you can afford to lose first. Once the Blocker or the counters are spent, the real attack walks in.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 115143,
+        "forcedWin": true,
+        "minAttackerActions": 8
+      }
+    },
+    {
+      "id": "hard-006",
+      "title": "Onigashima Roof: Leader abilities",
+      "difficulty": 5,
+      "concepts": [
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
+        "DON!! distribution"
+      ],
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Tony Tony.Chopper and Twenty Doctors can block. They can counter with Karoo (+1,000), Nefeltari Vivi (+1,000) and Twenty Doctors (+1,000). You have 3 active DON!! and Donquixote Doflamingo, Donquixote Doflamingo, Sables and Marshall.D.Teach in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "ST03-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-2",
+              "defId": "OP12-050",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-3",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-4",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-5",
+              "defId": "ST03-015",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-6",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-17",
+              "defId": "ST03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-18",
+              "defId": "ST03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-19",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-20",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 3,
+          "donRested": 7,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "OP01-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-7",
+              "defId": "ST01-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "o-8",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-10",
+              "defId": "ST01-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "h-11",
+              "defId": "ST01-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "h-12",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [
+            {
+              "uid": "life-9",
+              "defId": "ST01-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-13",
+              "defId": "ST01-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-14",
+              "defId": "OP11-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-15",
+              "defId": "ST01-008",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-16",
+              "defId": "EB03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "activate",
+            "uid": "m-L",
+            "targets": [
+              "o-7",
+              "$don:rested:4"
+            ]
+          },
+          "why": "Use Crocodile's Leader ability first. It costs 4 DON!! (returned to your DON!! deck) and sends Tony Tony.Chopper back to its owner's hand."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 6,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. They'd need +2,000 to stop it."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-L",
+            "target": "o-L"
+          },
+          "why": "Your Leader Crocodile swings at their Leader Roronoa Zoro, 6,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Marshall.D.Teach goes to 5,000. Keep loading it: it's going after their Leader Roronoa Zoro (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Marshall.D.Teach goes to 6,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. They'd need +2,000 to stop it, and their hand only has +1,000."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Marshall.D.Teach swings at their Leader Roronoa Zoro, 6,000 into 5,000. Twenty Doctors blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Donquixote Doflamingo swings at their Leader Roronoa Zoro, 7,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-2",
+            "target": "o-L"
+          },
+          "why": "Jaguar.D.Saul swings at their Leader Roronoa Zoro, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Long-press your Leader, Crocodile, and read its ability. What does it buy you before your first attack?",
+        "First move: Crocodile's ability.",
+        "1. Crocodile's ability  2. 1 DON!! to Crocodile  3. Crocodile attacks their Leader  4. 2 DON!! to Marshall.D.Teach  5. Marshall.D.Teach attacks their Leader  6. Donquixote Doflamingo attacks their Leader  7. Jaguar.D.Saul attacks their Leader"
+      ],
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 160424,
+        "forcedWin": true,
+        "minAttackerActions": 8
+      }
+    },
+    {
+      "id": "hard-007",
+      "title": "Marineford: Double Attack timing",
+      "difficulty": 5,
+      "concepts": [
+        "Double Attack timing",
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
+        "DON!! distribution"
+      ],
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Tsuru and Cerberus can block. They hold 1 face-down card. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 3 active DON!! and Capone\"Gang\"Bege and Blueno in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "OP06-022",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "ST07-012",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "OP11-033",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-2",
+              "defId": "ST16-004",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-3",
+              "defId": "ST02-004",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-4",
+              "defId": "EB01-017",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-14",
+              "defId": "OP11-111",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-15",
+              "defId": "OP12-106",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-16",
+              "defId": "ST07-012",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-17",
+              "defId": "OP01-054",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 3,
+          "donRested": 7,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "OP17-079",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-5",
+              "defId": "ST06-007",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "o-6",
+              "defId": "OP06-087",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "o-7",
+              "defId": "OP10-094",
+              "rested": true,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-9",
+              "defId": "EB03-040",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": false,
+          "life": [
+            {
+              "uid": "life-8",
+              "defId": "ST06-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-10",
+              "defId": "OP06-087",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-11",
+              "defId": "ST06-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-12",
+              "defId": "ST06-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-13",
+              "defId": "ST06-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "activate",
+            "uid": "m-L",
+            "targets": [
+              "m-0#2"
+            ]
+          },
+          "why": "Use Yamato's Leader ability: Baron Tamago gets 2 rested DON!! (+2,000) without touching your active DON!!. Free power comes first."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Yamato goes to 6,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Yamato goes to 7,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Yamato goes to 8,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +4,000 to stop it, and even at +2,000 a card they only have +2,000."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Bird Neptunian swings at their Leader Monkey.D.Luffy, 7,000 into 5,000. Tsuru blocks and is K.O.'d. That's 1 Blocker used up, 1 more to go."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-L",
+            "target": "o-L"
+          },
+          "why": "Your Leader Yamato swings at their Leader Monkey.D.Luffy, 8,000 into 5,000. Cerberus blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Baron Tamago swings at their Leader Monkey.D.Luffy, 8,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-2",
+            "target": "o-L"
+          },
+          "why": "Shanks swings at their Leader Monkey.D.Luffy, 11,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Double Attack takes two Life at once, but a hit at 1 Life doesn't win. Which attack needs to land after they reach 0?",
+        "First move: Yamato's ability onto Baron Tamago.",
+        "1. Yamato's ability onto Baron Tamago  2. 3 DON!! to Yamato  3. Bird Neptunian attacks their Leader  4. Yamato attacks their Leader  5. Baron Tamago attacks their Leader  6. Shanks attacks their Leader"
+      ],
+      "lesson": "Double Attack is two damage, but a Leader at 1 Life only loses that last card. Use it to get them to 0, then finish with a separate hit.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 371466,
+        "forcedWin": true,
+        "minAttackerActions": 8
+      }
+    },
+    {
+      "id": "hard-008",
+      "title": "Enies Lobby: Leader abilities",
+      "difficulty": 5,
+      "concepts": [
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
+        "DON!! distribution"
+      ],
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Brook can block. They can counter with Charlotte Flampe (+1,000). You have 5 active DON!! and Ain and Ain in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "ST05-001",
+            "rested": true,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "ST04-007",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "ST05-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-2",
+              "defId": "ST04-007",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-3",
+              "defId": "ST05-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-4",
+              "defId": "ST05-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-12",
+              "defId": "P-045",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-13",
+              "defId": "ST05-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-14",
+              "defId": "EB03-030",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-15",
+              "defId": "EB03-030",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 5,
+          "donRested": 5,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "ST09-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-5",
+              "defId": "ST29-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-7",
+              "defId": "ST07-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [
+            {
+              "uid": "life-6",
+              "defId": "ST07-012",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-8",
+              "defId": "OP12-106",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-9",
+              "defId": "OP11-111",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-10",
+              "defId": "ST07-012",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-11",
+              "defId": "ST07-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "activate",
+            "uid": "m-L",
+            "targets": [
+              "",
+              "$don:rested:3"
+            ]
+          },
+          "why": "Use Shanks's Leader ability first. It costs 3 DON!! (returned to your DON!! deck) and powers up undefined."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-0"
+          },
+          "why": "Sheepshead (slot 1) goes to 5,000. Keep loading it: it's going after their Leader Yamato (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-0"
+          },
+          "why": "Sheepshead (slot 1) goes to 6,000. Keep loading it: it's going after their Leader Yamato (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-0"
+          },
+          "why": "Sheepshead (slot 1) goes to 7,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +3,000 to stop it, and their hand only has +1,000."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-2"
+          },
+          "why": "Sheepshead (slot 3) goes to 5,000. Keep loading it: it's going after their Leader Yamato (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-2"
+          },
+          "why": "Sheepshead (slot 3) goes to 6,000 against their Leader Yamato (5,000). Ties go to the attacker. They'd need +2,000 to stop it, and their hand only has +1,000."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-2",
+            "target": "o-L"
+          },
+          "why": "Sheepshead (slot 3) swings at their Leader Yamato, 6,000 into 5,000. Brook blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Sheepshead (slot 1) swings at their Leader Yamato, 7,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Ain swings at their Leader Yamato, 7,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Long-press your Leader, Shanks, and read its ability. What does it buy you before your first attack?",
+        "First move: Shanks's ability.",
+        "1. Shanks's ability  2. 3 DON!! to Sheepshead (slot 1)  3. 2 DON!! to Sheepshead (slot 3)  4. Sheepshead (slot 3) attacks their Leader  5. Sheepshead (slot 1) attacks their Leader  6. Ain attacks their Leader"
+      ],
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 73553,
+        "forcedWin": true,
+        "minAttackerActions": 9
+      }
+    },
+    {
+      "id": "hard-009",
+      "title": "Sabaody Break: Leader abilities",
+      "difficulty": 5,
+      "concepts": [
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
+        "DON!! distribution"
+      ],
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Twenty Doctors can block. They hold 1 face-down card. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 5 active DON!! and Trafalgar Law and Donquixote Doflamingo in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "ST03-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "OP11-045",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-2",
+              "defId": "ST03-008",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-3",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-11",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-12",
+              "defId": "ST03-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-13",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-14",
+              "defId": "ST03-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 5,
+          "donRested": 5,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "ST01-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-4",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-6",
+              "defId": "OP01-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": false,
+          "life": [
+            {
+              "uid": "life-5",
+              "defId": "EB03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-7",
+              "defId": "P-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-8",
+              "defId": "OP01-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-9",
+              "defId": "OP11-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-10",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "activate",
+            "uid": "m-L",
+            "targets": [
+              "o-4",
+              "$don:rested:4"
+            ]
+          },
+          "why": "Use Crocodile's Leader ability first. It costs 4 DON!! (returned to your DON!! deck) and sends Twenty Doctors back to its owner's hand."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 6,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 7,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 8,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +4,000 to stop it."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Vinsmoke Niji swings at their Leader Monkey.D.Luffy, 6,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-0"
+          },
+          "why": "Marshall.D.Teach goes to 5,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-0"
+          },
+          "why": "Marshall.D.Teach goes to 6,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +2,000 to stop it."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Marshall.D.Teach swings at their Leader Monkey.D.Luffy, 6,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-L",
+            "target": "o-L"
+          },
+          "why": "Your Leader Crocodile swings at their Leader Monkey.D.Luffy, 8,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Long-press your Leader, Crocodile, and read its ability. What does it buy you before your first attack?",
+        "First move: Crocodile's ability.",
+        "1. Crocodile's ability  2. 3 DON!! to Crocodile  3. Vinsmoke Niji attacks their Leader  4. 2 DON!! to Marshall.D.Teach  5. Marshall.D.Teach attacks their Leader  6. Crocodile attacks their Leader"
+      ],
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 176586,
+        "forcedWin": true,
+        "minAttackerActions": 9
+      }
+    },
+    {
+      "id": "hard-010",
+      "title": "Wano Dawn: Leader abilities",
+      "difficulty": 5,
+      "concepts": [
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math"
+      ],
+      "intro": "Their Leader has 2 Life cards left, so it has to lose all of them before a final hit can win. Twenty Doctors can block. They can counter with Nefeltari Vivi (+1,000). You have 4 active DON!! and Sables and Marshall.D.Teach in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "ST03-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "OP11-045",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "OP11-053",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-2",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-3",
+              "defId": "ST03-015",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-4",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-13",
+              "defId": "OP12-050",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-14",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-15",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-16",
+              "defId": "ST03-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 4,
+          "donRested": 6,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "OP01-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-5",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-8",
+              "defId": "ST01-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [
+            {
+              "uid": "life-6",
+              "defId": "P-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "life-7",
+              "defId": "P-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-9",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-10",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-11",
+              "defId": "P-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-12",
+              "defId": "EB03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "activate",
+            "uid": "m-L",
+            "targets": [
+              "o-5",
+              "$don:rested:4"
+            ]
+          },
+          "why": "Use Crocodile's Leader ability first. It costs 4 DON!! (returned to your DON!! deck) and sends Twenty Doctors back to its owner's hand."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 6,000. Keep loading it: it's going after their Leader Roronoa Zoro (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 7,000. Keep loading it: it's going after their Leader Roronoa Zoro (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 8,000. Keep loading it: it's going after their Leader Roronoa Zoro (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 9,000 against their Leader Roronoa Zoro (5,000). Ties go to the attacker. They'd need +5,000 to stop it, and their hand only has +2,000."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Vinsmoke Niji swings at their Leader Roronoa Zoro, 6,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Tony Tony.Chopper swings at their Leader Roronoa Zoro, 6,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-2",
+            "target": "o-L"
+          },
+          "why": "Donquixote Doflamingo swings at their Leader Roronoa Zoro, 7,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-L",
+            "target": "o-L"
+          },
+          "why": "Your Leader Crocodile swings at their Leader Roronoa Zoro, 9,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Long-press your Leader, Crocodile, and read its ability. What does it buy you before your first attack?",
+        "First move: Crocodile's ability.",
+        "1. Crocodile's ability  2. 4 DON!! to Crocodile  3. Vinsmoke Niji attacks their Leader  4. Tony Tony.Chopper attacks their Leader  5. Donquixote Doflamingo attacks their Leader  6. Crocodile attacks their Leader"
+      ],
+      "lesson": "Start with your Leader's ability. Free DON!! or removal before your first attack often decides whether the numbers work.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 178408,
+        "forcedWin": true,
+        "minAttackerActions": 9
+      }
+    },
+    {
+      "id": "hard-011",
+      "title": "Laugh Tale: Rush & removal",
+      "difficulty": 5,
+      "concepts": [
+        "Rush & removal",
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
+        "DON!! distribution"
+      ],
+      "intro": "Their Leader has 1 Life card left, so it has to lose that card before a final hit can win. Ann and Black Maria can block. They can counter with Ginrummy (+1,000) and Viola (+2,000). You have 8 active DON!! and Donquixote Doflamingo and Sables in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "ST03-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "ST03-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-2",
+              "defId": "ST03-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-3",
+              "defId": "ST03-015",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-13",
+              "defId": "ST03-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-14",
+              "defId": "OP11-053",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-15",
+              "defId": "ST03-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-16",
+              "defId": "ST03-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 8,
+          "donRested": 2,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "ST05-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-4",
+              "defId": "ST05-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "o-5",
+              "defId": "ST04-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-7",
+              "defId": "ST04-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "h-8",
+              "defId": "EB03-030",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [
+            {
+              "uid": "life-6",
+              "defId": "ST04-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-9",
+              "defId": "OP11-068",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-10",
+              "defId": "ST04-011",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-11",
+              "defId": "ST04-012",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-12",
+              "defId": "EB03-030",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "play",
+            "uid": "mh-3",
+            "targets": [
+              "o-4"
+            ]
+          },
+          "why": "Play Sables for 4 DON!!. It sends Ann back to its owner's hand."
+        },
+        {
+          "action": {
+            "type": "activate",
+            "uid": "m-L",
+            "targets": [
+              "o-5",
+              "$don:rested:4"
+            ]
+          },
+          "why": "Use Crocodile's Leader ability first. It costs 4 DON!! (returned to your DON!! deck) and sends Black Maria back to its owner's hand."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 6,000. Keep loading it: it's going after their Leader Shanks (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 7,000. Keep loading it: it's going after their Leader Shanks (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-L"
+          },
+          "why": "Your Leader Crocodile goes to 8,000 against their Leader Shanks (5,000). Ties go to the attacker. They'd need +4,000 to stop it."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Donquixote Doflamingo swings at their Leader Shanks, 7,000 into 5,000. They spend +3,000 in counters to stop it. Those cards are gone for the attacks that matter."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Edward Weevil goes to 6,000 against their Leader Shanks (5,000). Ties go to the attacker. They'd need +2,000 to stop it, and their hand only has +1,000."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Edward Weevil swings at their Leader Shanks, 6,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-L",
+            "target": "o-L"
+          },
+          "why": "Your Leader Crocodile swings at their Leader Shanks, 8,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Your hand changes the board. Count your attackers and their Blockers before and after you play it.",
+        "First move: Play Sables.",
+        "1. Play Sables  2. Crocodile's ability  3. 3 DON!! to Crocodile  4. Donquixote Doflamingo attacks their Leader  5. 1 DON!! to Edward Weevil  6. Edward Weevil attacks their Leader  7. Crocodile attacks their Leader"
+      ],
+      "lesson": "Before you attach DON!!, check whether a card in hand adds an attacker or clears a Blocker. That usually does more than +1,000.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 351802,
+        "forcedWin": true,
+        "minAttackerActions": 9
+      }
+    },
+    {
+      "id": "hard-012",
+      "title": "Red Line: Triggers & Banish",
+      "difficulty": 5,
+      "concepts": [
+        "Triggers & Banish",
+        "Leader abilities",
+        "bait the Blocker",
+        "counter math",
+        "DON!! distribution"
+      ],
+      "intro": "Their Leader has 2 Life cards left, so it has to lose all of them before a final hit can win. Twenty Doctors can block. They hold 1 face-down card. Each is a Character in their Leader's colors with at most +2,000 counter, and none are Counter Events. You have 4 active DON!! and Ann, Ain, Ain and Roronoa Zoro in hand. Find the line that wins against any defense.",
+      "state": {
+        "me": {
+          "leader": {
+            "uid": "m-L",
+            "defId": "ST04-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "m-0",
+              "defId": "ST05-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-1",
+              "defId": "ST04-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-2",
+              "defId": "ST04-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "m-3",
+              "defId": "ST05-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "mh-4",
+              "defId": "ST05-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-5",
+              "defId": "ST05-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-6",
+              "defId": "ST05-002",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "mh-7",
+              "defId": "P-045",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": true,
+          "life": [],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "md-17",
+              "defId": "EB03-030",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-18",
+              "defId": "OP11-068",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-19",
+              "defId": "ST04-012",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "md-20",
+              "defId": "P-045",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 4,
+          "donRested": 6,
+          "donDeck": 0
+        },
+        "opp": {
+          "leader": {
+            "uid": "o-L",
+            "defId": "ST01-001",
+            "rested": false,
+            "don": 0,
+            "playedThisTurn": false,
+            "powerMod": 0
+          },
+          "characters": [
+            {
+              "uid": "o-8",
+              "defId": "OP08-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "o-9",
+              "defId": "OP04-014",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "stage": null,
+          "hand": [
+            {
+              "uid": "h-12",
+              "defId": "OP11-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "handVisible": false,
+          "life": [
+            {
+              "uid": "life-10",
+              "defId": "OP01-006",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "life-11",
+              "defId": "ST01-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "lifeVisible": true,
+          "deck": [
+            {
+              "uid": "deck-13",
+              "defId": "ST01-008",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-14",
+              "defId": "ST01-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-15",
+              "defId": "ST01-003",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            },
+            {
+              "uid": "deck-16",
+              "defId": "ST01-009",
+              "rested": false,
+              "don": 0,
+              "playedThisTurn": false,
+              "powerMod": 0
+            }
+          ],
+          "deckCount": 20,
+          "trash": [],
+          "donActive": 0,
+          "donRested": 10,
+          "donDeck": 0
+        },
+        "phase": "main",
+        "winner": null,
+        "turnFlags": {},
+        "log": []
+      },
+      "solution": [
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Ginrummy (slot 2) goes to 4,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-1"
+          },
+          "why": "Ginrummy (slot 2) goes to 5,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +1,000 to stop it."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-2"
+          },
+          "why": "Ginrummy (slot 3) goes to 4,000. Keep loading it: it's going after their Leader Monkey.D.Luffy (5,000), and every extra 1,000 is another counter they have to find."
+        },
+        {
+          "action": {
+            "type": "attachDon",
+            "target": "m-2"
+          },
+          "why": "Ginrummy (slot 3) goes to 5,000 against their Leader Monkey.D.Luffy (5,000). Ties go to the attacker. They'd need +1,000 to stop it."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-1",
+            "target": "o-L"
+          },
+          "why": "Ginrummy (slot 2) swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. They spend +2,000 in counters to stop it. Those cards are gone for the attacks that matter."
+        },
+        {
+          "action": {
+            "type": "activate",
+            "uid": "m-L",
+            "targets": [
+              "yes",
+              "$don:rested:5",
+              "$don:m-1:2"
+            ]
+          },
+          "why": "Use Kaido's Leader ability first. It costs 7 DON!! (returned to your DON!! deck) and trashes the top card of their Life."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-L",
+            "target": "o-L"
+          },
+          "why": "Your Leader Kaido swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. Twenty Doctors blocks and is K.O.'d. That was their last Blocker, so the next attack can't be redirected."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-0",
+            "target": "o-L"
+          },
+          "why": "Ain (slot 1) swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. It hits. They take 1 Life card into hand, and that card could be a counter later. They are at 0 Life now; the next clean hit wins."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-2",
+            "target": "o-L"
+          },
+          "why": "Ginrummy (slot 3) swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. They spend +1,000 in counters to stop it. Those cards are gone for the attacks that matter."
+        },
+        {
+          "action": {
+            "type": "attack",
+            "attacker": "m-3",
+            "target": "o-L"
+          },
+          "why": "Ain (slot 4) swings at their Leader Monkey.D.Luffy, 5,000 into 5,000. Nothing can stop it at 0 Life. Lethal."
+        }
+      ],
+      "hints": [
+        "Look at their Life before you swing. What happens if the wrong attack flips it?",
+        "First move: 2 DON!! to Ginrummy (slot 2).",
+        "1. 2 DON!! to Ginrummy (slot 2)  2. 2 DON!! to Ginrummy (slot 3)  3. Ginrummy (slot 2) attacks their Leader  4. Kaido's ability  5. Kaido attacks their Leader  6. Ain (slot 1) attacks their Leader  7. Ginrummy (slot 3) attacks their Leader  8. Ain (slot 4) attacks their Leader"
+      ],
+      "lesson": "A Life card can fight back through its Trigger. Banish trashes it instead, so choose which attacker takes the Life card.",
+      "verified": {
+        "solverVersion": "optcg-main-1.0.0",
+        "nodes": 394056,
+        "forcedWin": true,
+        "minAttackerActions": 10
+      }
     }
   ],
   "packs": [
+    {
+      "id": "hard",
+      "title": "Captain's gauntlet",
+      "puzzleIds": [
+        "hard-001",
+        "hard-002",
+        "hard-003",
+        "hard-004",
+        "hard-005",
+        "hard-006",
+        "hard-007",
+        "hard-008",
+        "hard-009",
+        "hard-010",
+        "hard-011",
+        "hard-012"
+      ]
+    },
     {
       "id": "starter",
       "title": "Starter lessons",
@@ -10020,6 +13593,14 @@
       ]
     },
     {
+      "id": "pack-triggers-banish",
+      "title": "Triggers & Banish",
+      "puzzleIds": [
+        "gen-0003",
+        "gen-0009"
+      ]
+    },
+    {
       "id": "pack-counter-math",
       "title": "Counter math",
       "puzzleIds": [
@@ -10121,6 +13702,18 @@
     "gen-0035",
     "gen-0045",
     "gen-0026",
-    "gen-0021"
+    "gen-0021",
+    "hard-001",
+    "hard-002",
+    "hard-003",
+    "hard-004",
+    "hard-005",
+    "hard-006",
+    "hard-007",
+    "hard-008",
+    "hard-009",
+    "hard-010",
+    "hard-011",
+    "hard-012"
   ]
 }
